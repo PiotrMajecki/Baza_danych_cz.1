@@ -1,0 +1,579 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="keywords" content="TDM_Report">
+        <link rel="stylesheet" type="text/css" media="screen" href="anim.css" title="report">
+        <link rel="stylesheet" type="text/css" media="print" href="anim_NoFrames_print.css" title="report">
+            <script src="tdmShowDetails.js" type="text/javascript"></script>
+        <title>Toad Data Modeler - HTML Report</title>
+    </head>
+
+<body onLoad="getUrlItem()"><div class="mainContainer"><div id="headerContainer"><div id="header"><div class="title1"></div><div class="title2">Relationships</div><div class="reportStats">czwartek, 12 grudnia 2019 13:31:59</div><div class="titleimage"><a href="https://www.quest.com/" target="_blank"><img src="Img/logo.png" alt="Made with Toad Data Modeler" border="0" /></a></div><div class="headerEnd"><p>&nbsp;</p></div></div><div id="navTop"><ul><li><a href="MInfo.html">Model Info</a></li><li><a href="MImage.html">ER Diagram</a></li><li><a href="Entities.html">Entities</a></li><li><a href="Attributes.html">Attributes</a></li><li><a href="UniqueIdentifiers.html">Unique Identifiers</a></li><li class="selLi"><a href="Relations.html" class="selAnchor">Relationships</a></li><li><a href="Inheritances.html">Inheritances</a></li><li><a href="Domains.html">Domains</a></li><li><a href="Rules.html">Rules</a></li></ul><div id="navTopEnd"><p>&nbsp;</p></div></div></div><div id="navCombo"><form name="allItems" action=""><select name="listOfItems" onChange="showSelected()"><option value="Relation_{4AC39144-B1F1-4003-B1D9-E9E8AD031491}">Kupuje</option><option value="Relation_{F65AA1A4-CE29-434D-A841-A7D9FC8499D9}">Ma</option><option value="Relation_{F98AB5D3-A932-419E-984C-3598C9593EC9}">Obsluguje</option><option value="Relation_{2C35AB6E-3051-4A1F-9D38-BE5103984360}">Otrzymuje</option><option value="Relation_{6815B238-95C7-4E94-8D28-9A51BD0D9F34}">Posiada</option><option value="Relation_{BC5A0093-3A93-4145-B757-E1070AC0501A}">Pracuje_przy</option><option value="Relation_{D90C78D0-DF5A-4755-ACF1-7A27F90DF0CF}">Sprzedaje</option><option value="Relation_{61BC020D-CA6F-4720-A4EB-D68139FD323C}">Umozliwia</option><option value="Relation_{7BBA4BB7-F406-451F-8174-0174806AFEFC}">Wymaga</option><option value="Relation_{81F35173-53E8-447E-8F29-47C19CCDCF01}">Zabawia</option><option value="Relation_{A1344D05-9B6B-4911-BD08-D2A80BFEC04A}">Zapewnia</option><option value="Relation_{CF5829F9-19E7-4BC9-917A-AEF04626E7E2}">Zatrudnia</option></select></form><div id="navComboEnd"><p></p></div></div><div id="navLeft"><div id="bookmark"><ul><li><a onClick="return showDetail('Relation_{4AC39144-B1F1-4003-B1D9-E9E8AD031491}', this)">Kupuje</a></li><li><a onClick="return showDetail('Relation_{F65AA1A4-CE29-434D-A841-A7D9FC8499D9}', this)">Ma</a></li><li><a onClick="return showDetail('Relation_{F98AB5D3-A932-419E-984C-3598C9593EC9}', this)">Obsluguje</a></li><li><a onClick="return showDetail('Relation_{2C35AB6E-3051-4A1F-9D38-BE5103984360}', this)">Otrzymuje</a></li><li><a onClick="return showDetail('Relation_{6815B238-95C7-4E94-8D28-9A51BD0D9F34}', this)">Posiada</a></li><li><a onClick="return showDetail('Relation_{BC5A0093-3A93-4145-B757-E1070AC0501A}', this)">Pracuje_przy</a></li><li><a onClick="return showDetail('Relation_{D90C78D0-DF5A-4755-ACF1-7A27F90DF0CF}', this)">Sprzedaje</a></li><li><a onClick="return showDetail('Relation_{61BC020D-CA6F-4720-A4EB-D68139FD323C}', this)">Umozliwia</a></li><li><a onClick="return showDetail('Relation_{7BBA4BB7-F406-451F-8174-0174806AFEFC}', this)">Wymaga</a></li><li><a onClick="return showDetail('Relation_{81F35173-53E8-447E-8F29-47C19CCDCF01}', this)">Zabawia</a></li><li><a onClick="return showDetail('Relation_{A1344D05-9B6B-4911-BD08-D2A80BFEC04A}', this)">Zapewnia</a></li><li><a onClick="return showDetail('Relation_{CF5829F9-19E7-4BC9-917A-AEF04626E7E2}', this)">Zatrudnia</a></li></ul><div id="bookmarkEnd"><p>&nbsp;</p></div></div></div><div class="separator" ></div><div class="container"><div id="content"><div id="Relation_{4AC39144-B1F1-4003-B1D9-E9E8AD031491}" class="item">
+<a name = "Relation_{4AC39144-B1F1-4003-B1D9-E9E8AD031491}"></a>
+<div class="caption1"><p>Kupuje</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="30%">Caption</td>
+<td class="tabdata" width="70%">Kupuje</td>
+</tr>
+<tr>
+<td class="tabhead" width="30%">Relationship Type</td>
+<td class="tabdata" width="70%">Non-Identifying</td>
+</tr>
+<tr>
+<td class="tabhead" width="30%">Foreign Unique Identifier</td>
+<td class="tabdata" width="70%">Unique_Identifier4</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationship Between</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="12%">Entity</td>
+<td class="tabdata" width="40%">Klient</td>
+<td class="tabhead" width="16%">Dependency</td>
+<td class="tabdata" width="8%">NO</td>
+<td class="tabhead" width="14%">Cardinality</td>
+<td class="tabdata" width="10%">0..1</td>
+</tr>
+<tr>
+<td class="tabhead" width="12%">Entity</td>
+<td class="tabdata" width="40%">Bilet</td>
+<td class="tabhead" width="16%">Dependency</td>
+<td class="tabdata" width="8%">NO</td>
+<td class="tabhead" width="14%">Cardinality</td>
+<td class="tabdata" width="10%">0..m</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Description</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata">Klient kupuje bilet</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{F65AA1A4-CE29-434D-A841-A7D9FC8499D9}" class="item">
+<a name = "Relation_{F65AA1A4-CE29-434D-A841-A7D9FC8499D9}"></a>
+<div class="caption1"><p>Ma</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="30%">Caption</td>
+<td class="tabdata" width="70%">Ma</td>
+</tr>
+<tr>
+<td class="tabhead" width="30%">Relationship Type</td>
+<td class="tabdata" width="70%">Non-Identifying</td>
+</tr>
+<tr>
+<td class="tabhead" width="30%">Foreign Unique Identifier</td>
+<td class="tabdata" width="70%">Unique_Identifier1</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationship Between</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="12%">Entity</td>
+<td class="tabdata" width="40%">Park_rozrywki</td>
+<td class="tabhead" width="16%">Dependency</td>
+<td class="tabdata" width="8%">NO</td>
+<td class="tabhead" width="14%">Cardinality</td>
+<td class="tabdata" width="10%">1..1</td>
+</tr>
+<tr>
+<td class="tabhead" width="12%">Entity</td>
+<td class="tabdata" width="40%">Kasa</td>
+<td class="tabhead" width="16%">Dependency</td>
+<td class="tabdata" width="8%">NO</td>
+<td class="tabhead" width="14%">Cardinality</td>
+<td class="tabdata" width="10%">0..m</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Description</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata">Park rozrywki ma kase</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{F98AB5D3-A932-419E-984C-3598C9593EC9}" class="item">
+<a name = "Relation_{F98AB5D3-A932-419E-984C-3598C9593EC9}"></a>
+<div class="caption1"><p>Obsluguje</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="30%">Caption</td>
+<td class="tabdata" width="70%">Obsluguje</td>
+</tr>
+<tr>
+<td class="tabhead" width="30%">Relationship Type</td>
+<td class="tabdata" width="70%">Non-Identifying</td>
+</tr>
+<tr>
+<td class="tabhead" width="30%">Foreign Unique Identifier</td>
+<td class="tabdata" width="70%">Unique_Identifier2</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationship Between</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="12%">Entity</td>
+<td class="tabdata" width="40%">Pracownik</td>
+<td class="tabhead" width="16%">Dependency</td>
+<td class="tabdata" width="8%">NO</td>
+<td class="tabhead" width="14%">Cardinality</td>
+<td class="tabdata" width="10%">0..n</td>
+</tr>
+<tr>
+<td class="tabhead" width="12%">Entity</td>
+<td class="tabdata" width="40%">Kasa</td>
+<td class="tabhead" width="16%">Dependency</td>
+<td class="tabdata" width="8%">NO</td>
+<td class="tabhead" width="14%">Cardinality</td>
+<td class="tabdata" width="10%">0..m</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Description</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata">Pracownik obsluguje kase</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{2C35AB6E-3051-4A1F-9D38-BE5103984360}" class="item">
+<a name = "Relation_{2C35AB6E-3051-4A1F-9D38-BE5103984360}"></a>
+<div class="caption1"><p>Otrzymuje</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="30%">Caption</td>
+<td class="tabdata" width="70%">Otrzymuje</td>
+</tr>
+<tr>
+<td class="tabhead" width="30%">Relationship Type</td>
+<td class="tabdata" width="70%">Non-Identifying</td>
+</tr>
+<tr>
+<td class="tabhead" width="30%">Foreign Unique Identifier</td>
+<td class="tabdata" width="70%">Unique_Identifier2</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationship Between</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="12%">Entity</td>
+<td class="tabdata" width="40%">Pracownik</td>
+<td class="tabhead" width="16%">Dependency</td>
+<td class="tabdata" width="8%">NO</td>
+<td class="tabhead" width="14%">Cardinality</td>
+<td class="tabdata" width="10%">1..1</td>
+</tr>
+<tr>
+<td class="tabhead" width="12%">Entity</td>
+<td class="tabdata" width="40%">Wynagrodzenie</td>
+<td class="tabhead" width="16%">Dependency</td>
+<td class="tabdata" width="8%">NO</td>
+<td class="tabhead" width="14%">Cardinality</td>
+<td class="tabdata" width="10%">0..m</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Description</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata">Pracownik otrzymuje wynagrodzenie</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{6815B238-95C7-4E94-8D28-9A51BD0D9F34}" class="item">
+<a name = "Relation_{6815B238-95C7-4E94-8D28-9A51BD0D9F34}"></a>
+<div class="caption1"><p>Posiada</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="30%">Caption</td>
+<td class="tabdata" width="70%">Posiada</td>
+</tr>
+<tr>
+<td class="tabhead" width="30%">Relationship Type</td>
+<td class="tabdata" width="70%">Non-Identifying</td>
+</tr>
+<tr>
+<td class="tabhead" width="30%">Foreign Unique Identifier</td>
+<td class="tabdata" width="70%">Unique_Identifier5</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationship Between</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="12%">Entity</td>
+<td class="tabdata" width="40%">Atrakcja</td>
+<td class="tabhead" width="16%">Dependency</td>
+<td class="tabdata" width="8%">NO</td>
+<td class="tabhead" width="14%">Cardinality</td>
+<td class="tabdata" width="10%">1..1</td>
+</tr>
+<tr>
+<td class="tabhead" width="12%">Entity</td>
+<td class="tabdata" width="40%">Wagonik</td>
+<td class="tabhead" width="16%">Dependency</td>
+<td class="tabdata" width="8%">NO</td>
+<td class="tabhead" width="14%">Cardinality</td>
+<td class="tabdata" width="10%">0..m</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Description</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata">Atrakcja posiada wagonik</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{BC5A0093-3A93-4145-B757-E1070AC0501A}" class="item">
+<a name = "Relation_{BC5A0093-3A93-4145-B757-E1070AC0501A}"></a>
+<div class="caption1"><p>Pracuje_przy</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="30%">Caption</td>
+<td class="tabdata" width="70%">Pracuje przy</td>
+</tr>
+<tr>
+<td class="tabhead" width="30%">Relationship Type</td>
+<td class="tabdata" width="70%">Non-Identifying</td>
+</tr>
+<tr>
+<td class="tabhead" width="30%">Foreign Unique Identifier</td>
+<td class="tabdata" width="70%">Unique_Identifier2</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationship Between</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="12%">Entity</td>
+<td class="tabdata" width="40%">Pracownik</td>
+<td class="tabhead" width="16%">Dependency</td>
+<td class="tabdata" width="8%">NO</td>
+<td class="tabhead" width="14%">Cardinality</td>
+<td class="tabdata" width="10%">1..n</td>
+</tr>
+<tr>
+<td class="tabhead" width="12%">Entity</td>
+<td class="tabdata" width="40%">Atrakcja</td>
+<td class="tabhead" width="16%">Dependency</td>
+<td class="tabdata" width="8%">NO</td>
+<td class="tabhead" width="14%">Cardinality</td>
+<td class="tabdata" width="10%">0..m</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Description</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata">Pracownik pracuje przy atrakcji</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{D90C78D0-DF5A-4755-ACF1-7A27F90DF0CF}" class="item">
+<a name = "Relation_{D90C78D0-DF5A-4755-ACF1-7A27F90DF0CF}"></a>
+<div class="caption1"><p>Sprzedaje</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="30%">Caption</td>
+<td class="tabdata" width="70%">Sprzedaje</td>
+</tr>
+<tr>
+<td class="tabhead" width="30%">Relationship Type</td>
+<td class="tabdata" width="70%">Non-Identifying</td>
+</tr>
+<tr>
+<td class="tabhead" width="30%">Foreign Unique Identifier</td>
+<td class="tabdata" width="70%">Unique_Identifier17</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationship Between</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="12%">Entity</td>
+<td class="tabdata" width="40%">Kasa</td>
+<td class="tabhead" width="16%">Dependency</td>
+<td class="tabdata" width="8%">NO</td>
+<td class="tabhead" width="14%">Cardinality</td>
+<td class="tabdata" width="10%">1..1</td>
+</tr>
+<tr>
+<td class="tabhead" width="12%">Entity</td>
+<td class="tabdata" width="40%">Bilet</td>
+<td class="tabhead" width="16%">Dependency</td>
+<td class="tabdata" width="8%">NO</td>
+<td class="tabhead" width="14%">Cardinality</td>
+<td class="tabdata" width="10%">0..m</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Description</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata">Kasa sprzedaje bilet</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{61BC020D-CA6F-4720-A4EB-D68139FD323C}" class="item">
+<a name = "Relation_{61BC020D-CA6F-4720-A4EB-D68139FD323C}"></a>
+<div class="caption1"><p>Umozliwia</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="30%">Caption</td>
+<td class="tabdata" width="70%">Umozliwia</td>
+</tr>
+<tr>
+<td class="tabhead" width="30%">Relationship Type</td>
+<td class="tabdata" width="70%">Non-Identifying</td>
+</tr>
+<tr>
+<td class="tabhead" width="30%">Foreign Unique Identifier</td>
+<td class="tabdata" width="70%">Unique_Identifier1</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationship Between</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="12%">Entity</td>
+<td class="tabdata" width="40%">Park_rozrywki</td>
+<td class="tabhead" width="16%">Dependency</td>
+<td class="tabdata" width="8%">NO</td>
+<td class="tabhead" width="14%">Cardinality</td>
+<td class="tabdata" width="10%">1..1</td>
+</tr>
+<tr>
+<td class="tabhead" width="12%">Entity</td>
+<td class="tabdata" width="40%">Przekaska</td>
+<td class="tabhead" width="16%">Dependency</td>
+<td class="tabdata" width="8%">NO</td>
+<td class="tabhead" width="14%">Cardinality</td>
+<td class="tabdata" width="10%">0..m</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Description</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata">Park rozrywki umozliwia zjedzeniie przekaski</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{7BBA4BB7-F406-451F-8174-0174806AFEFC}" class="item">
+<a name = "Relation_{7BBA4BB7-F406-451F-8174-0174806AFEFC}"></a>
+<div class="caption1"><p>Wymaga</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="30%">Caption</td>
+<td class="tabdata" width="70%">Wymaga</td>
+</tr>
+<tr>
+<td class="tabhead" width="30%">Relationship Type</td>
+<td class="tabdata" width="70%">Non-Identifying</td>
+</tr>
+<tr>
+<td class="tabhead" width="30%">Foreign Unique Identifier</td>
+<td class="tabdata" width="70%">Unique_Identifier5</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationship Between</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="12%">Entity</td>
+<td class="tabdata" width="40%">Atrakcja</td>
+<td class="tabhead" width="16%">Dependency</td>
+<td class="tabdata" width="8%">NO</td>
+<td class="tabhead" width="14%">Cardinality</td>
+<td class="tabdata" width="10%">1..n</td>
+</tr>
+<tr>
+<td class="tabhead" width="12%">Entity</td>
+<td class="tabdata" width="40%">Bilet</td>
+<td class="tabhead" width="16%">Dependency</td>
+<td class="tabdata" width="8%">NO</td>
+<td class="tabhead" width="14%">Cardinality</td>
+<td class="tabdata" width="10%">0..m</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Description</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata">Atrakcja wymaga biletu</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{81F35173-53E8-447E-8F29-47C19CCDCF01}" class="item">
+<a name = "Relation_{81F35173-53E8-447E-8F29-47C19CCDCF01}"></a>
+<div class="caption1"><p>Zabawia</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="30%">Caption</td>
+<td class="tabdata" width="70%">Zabawia</td>
+</tr>
+<tr>
+<td class="tabhead" width="30%">Relationship Type</td>
+<td class="tabdata" width="70%">Non-Identifying</td>
+</tr>
+<tr>
+<td class="tabhead" width="30%">Foreign Unique Identifier</td>
+<td class="tabdata" width="70%">Unique_Identifier1</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationship Between</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="12%">Entity</td>
+<td class="tabdata" width="40%">Park_rozrywki</td>
+<td class="tabhead" width="16%">Dependency</td>
+<td class="tabdata" width="8%">NO</td>
+<td class="tabhead" width="14%">Cardinality</td>
+<td class="tabdata" width="10%">1..1</td>
+</tr>
+<tr>
+<td class="tabhead" width="12%">Entity</td>
+<td class="tabdata" width="40%">Klient</td>
+<td class="tabhead" width="16%">Dependency</td>
+<td class="tabdata" width="8%">NO</td>
+<td class="tabhead" width="14%">Cardinality</td>
+<td class="tabdata" width="10%">0..m</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Description</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata">Park rozrywki zabawia klienta</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{A1344D05-9B6B-4911-BD08-D2A80BFEC04A}" class="item">
+<a name = "Relation_{A1344D05-9B6B-4911-BD08-D2A80BFEC04A}"></a>
+<div class="caption1"><p>Zapewnia</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="30%">Caption</td>
+<td class="tabdata" width="70%">Zapewnia</td>
+</tr>
+<tr>
+<td class="tabhead" width="30%">Relationship Type</td>
+<td class="tabdata" width="70%">Non-Identifying</td>
+</tr>
+<tr>
+<td class="tabhead" width="30%">Foreign Unique Identifier</td>
+<td class="tabdata" width="70%">Unique_Identifier1</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationship Between</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="12%">Entity</td>
+<td class="tabdata" width="40%">Park_rozrywki</td>
+<td class="tabhead" width="16%">Dependency</td>
+<td class="tabdata" width="8%">NO</td>
+<td class="tabhead" width="14%">Cardinality</td>
+<td class="tabdata" width="10%">1..1</td>
+</tr>
+<tr>
+<td class="tabhead" width="12%">Entity</td>
+<td class="tabdata" width="40%">Atrakcja</td>
+<td class="tabhead" width="16%">Dependency</td>
+<td class="tabdata" width="8%">NO</td>
+<td class="tabhead" width="14%">Cardinality</td>
+<td class="tabdata" width="10%">0..m</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Description</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata">Park rozrywki zapewnia atrakcje</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Relation_{CF5829F9-19E7-4BC9-917A-AEF04626E7E2}" class="item">
+<a name = "Relation_{CF5829F9-19E7-4BC9-917A-AEF04626E7E2}"></a>
+<div class="caption1"><p>Zatrudnia</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="30%">Caption</td>
+<td class="tabdata" width="70%">Zatrudnia</td>
+</tr>
+<tr>
+<td class="tabhead" width="30%">Relationship Type</td>
+<td class="tabdata" width="70%">Non-Identifying</td>
+</tr>
+<tr>
+<td class="tabhead" width="30%">Foreign Unique Identifier</td>
+<td class="tabdata" width="70%">Unique_Identifier1</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationship Between</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="12%">Entity</td>
+<td class="tabdata" width="40%">Park_rozrywki</td>
+<td class="tabhead" width="16%">Dependency</td>
+<td class="tabdata" width="8%">NO</td>
+<td class="tabhead" width="14%">Cardinality</td>
+<td class="tabdata" width="10%">1..1</td>
+</tr>
+<tr>
+<td class="tabhead" width="12%">Entity</td>
+<td class="tabdata" width="40%">Pracownik</td>
+<td class="tabhead" width="16%">Dependency</td>
+<td class="tabdata" width="8%">NO</td>
+<td class="tabhead" width="14%">Cardinality</td>
+<td class="tabdata" width="10%">0..m</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Description</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata">Park rozrywki zatrudnia pracownika</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+</div><div id="footer"><div class="pageFooter">Copyright &copy; Sitename 2005</div><div class="footerEnd"><p></p></div></div></div></div></body></html>

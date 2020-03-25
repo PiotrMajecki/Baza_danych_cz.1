@@ -1,0 +1,2491 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="keywords" content="TDM_Report">
+        <link rel="stylesheet" type="text/css" media="screen" href="anim.css" title="report">
+        <link rel="stylesheet" type="text/css" media="print" href="anim_NoFrames_print.css" title="report">
+            <script src="tdmShowDetails.js" type="text/javascript"></script>
+        <title>Toad Data Modeler - HTML Report</title>
+    </head>
+
+<body onLoad="getUrlItem()"><div class="mainContainer"><div id="headerContainer"><div id="header"><div class="title1"></div><div class="title2">Entities</div><div class="reportStats">piątek, 13 grudnia 2019 05:49:46</div><div class="titleimage"><a href="https://www.quest.com/" target="_blank"><img src="Img/logo.png" alt="Made with Toad Data Modeler" border="0" /></a></div><div class="headerEnd"><p>&nbsp;</p></div></div><div id="navTop"><ul><li><a href="MInfo.html">Model Info</a></li><li><a href="MImage.html">ER Diagram</a></li><li class="selLi"><a href="Tables.html" class="selAnchor">Entities</a></li><li><a href="Columns.html">Attributes</a></li><li><a href="Indexes.html">Indexes</a></li><li><a href="Keys.html">Keys</a></li><li><a href="Relations.html">Relationships</a></li><li><a href="Domains.html">Domains</a></li><li><a href="CheckRules.html">Check Constraint Rules</a></li><li><a href="CheckConstraints.html">Check Constraints</a></li><li><a href="Triggers.html">Triggers</a></li><li><a href="Sequences.html">Sequences</a></li></ul><div id="navTopEnd"><p>&nbsp;</p></div></div></div><div id="navCombo"><form name="allItems" action=""><select name="listOfItems" onChange="showSelected()"><option value="Table_{16ADA0D0-0740-4A3A-A589-47A242451885}">Adresy</option><option value="Table_{F7660573-F9AD-4150-AB21-EEAE8229AF6E}">Atrakcje</option><option value="Table_{ED8F1789-5F13-48F7-AF6C-EDD5BCDFA1B1}">Atrakcje_Bilety</option><option value="Table_{95ABFC5B-F41B-4BC5-9619-C8E07C725585}">Bilety</option><option value="Table_{006F24FA-DBF2-45FA-BAD7-8670617602F3}">Dla_doroslych</option><option value="Table_{AF2D5B90-DA55-47E4-96F5-860BC03469DB}">Dla_dzieci</option><option value="Table_{DFAB95FF-C102-4291-9AF5-658596072822}">Dla_mlodziezy</option><option value="Table_{EECD7A51-B78A-4216-8560-E0492ED5B937}">Kasy</option><option value="Table_{7EE6F4D5-677B-4EC0-BAA1-2DB5192C1456}">Klienci</option><option value="Table_{2401C119-2308-472E-9428-B000D40675B1}">Parki_rozrywki</option><option value="Table_{43D132F6-4587-4783-83F1-65DD123DADA8}">Pracownicy</option><option value="Table_{09902188-B092-4656-9742-221EF2C95957}">Pracownicy_Atrakcje</option><option value="Table_{6610DC74-323D-4E4D-A019-869803B99112}">Pracownicy_Kasy</option><option value="Table_{6F303977-F508-4BBB-A392-A06A97181712}">Przekaski</option><option value="Table_{612B1027-3DB6-4BAB-A5BD-ADBAA44BBAF9}">Stanowiska</option><option value="Table_{5B1F5D5F-E8FE-4832-87B7-FFC31E1B94F7}">Wagoniki</option><option value="Table_{CEB464DA-44B9-432C-8426-CA3FC00611F4}">Wlasciciele</option><option value="Table_{8831B7CF-EEB7-49C1-811E-DAF774F5A550}">Wynagrodzenia</option></select></form><div id="navComboEnd"><p></p></div></div><div id="navLeft"><div id="bookmark"><ul><li><a onClick="return showDetail('Table_{16ADA0D0-0740-4A3A-A589-47A242451885}', this)">Adresy</a></li><li><a onClick="return showDetail('Table_{F7660573-F9AD-4150-AB21-EEAE8229AF6E}', this)">Atrakcje</a></li><li><a onClick="return showDetail('Table_{ED8F1789-5F13-48F7-AF6C-EDD5BCDFA1B1}', this)">Atrakcje_Bilety</a></li><li><a onClick="return showDetail('Table_{95ABFC5B-F41B-4BC5-9619-C8E07C725585}', this)">Bilety</a></li><li><a onClick="return showDetail('Table_{006F24FA-DBF2-45FA-BAD7-8670617602F3}', this)">Dla_doroslych</a></li><li><a onClick="return showDetail('Table_{AF2D5B90-DA55-47E4-96F5-860BC03469DB}', this)">Dla_dzieci</a></li><li><a onClick="return showDetail('Table_{DFAB95FF-C102-4291-9AF5-658596072822}', this)">Dla_mlodziezy</a></li><li><a onClick="return showDetail('Table_{EECD7A51-B78A-4216-8560-E0492ED5B937}', this)">Kasy</a></li><li><a onClick="return showDetail('Table_{7EE6F4D5-677B-4EC0-BAA1-2DB5192C1456}', this)">Klienci</a></li><li><a onClick="return showDetail('Table_{2401C119-2308-472E-9428-B000D40675B1}', this)">Parki_rozrywki</a></li><li><a onClick="return showDetail('Table_{43D132F6-4587-4783-83F1-65DD123DADA8}', this)">Pracownicy</a></li><li><a onClick="return showDetail('Table_{09902188-B092-4656-9742-221EF2C95957}', this)">Pracownicy_Atrakcje</a></li><li><a onClick="return showDetail('Table_{6610DC74-323D-4E4D-A019-869803B99112}', this)">Pracownicy_Kasy</a></li><li><a onClick="return showDetail('Table_{6F303977-F508-4BBB-A392-A06A97181712}', this)">Przekaski</a></li><li><a onClick="return showDetail('Table_{612B1027-3DB6-4BAB-A5BD-ADBAA44BBAF9}', this)">Stanowiska</a></li><li><a onClick="return showDetail('Table_{5B1F5D5F-E8FE-4832-87B7-FFC31E1B94F7}', this)">Wagoniki</a></li><li><a onClick="return showDetail('Table_{CEB464DA-44B9-432C-8426-CA3FC00611F4}', this)">Wlasciciele</a></li><li><a onClick="return showDetail('Table_{8831B7CF-EEB7-49C1-811E-DAF774F5A550}', this)">Wynagrodzenia</a></li></ul><div id="bookmarkEnd"><p>&nbsp;</p></div></div></div><div class="separator" ></div><div class="container"><div id="content"><div id="Table_{16ADA0D0-0740-4A3A-A589-47A242451885}" class="item">
+<a name = "Table_{16ADA0D0-0740-4A3A-A589-47A242451885}"></a>
+<div class="caption1"><p>Adresy</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">Adresy</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Key</td>
+<td class="tabhead">Attribute Name</td>
+<td class="tabhead">Domain</td>
+<td class="tabhead">Data Type</td>
+<td class="tabhead">Not Null</td>
+<td class="tabhead">Unique</td>
+<td class="tabhead">Check</td>
+<td class="tabhead">Default</td>
+<td class="tabhead">Comments</td>
+</tr>
+<tr>
+<td class="tabdata">PK</td>
+<td class="tabdata">Id_adresu</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Unikatowy numer adresu</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Miejscowosc</td>
+<td class="tabdata"></td>
+<td class="tabdata">Varchar2(40 )</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Miejscowosc adresu</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Ulica</td>
+<td class="tabdata"></td>
+<td class="tabdata">Varchar2(80 )</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Ulica adresu</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Numer_budynku</td>
+<td class="tabdata"></td>
+<td class="tabdata">Varchar2(8 )</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Numer budynku adresu</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Numer_mieszkania</td>
+<td class="tabdata"></td>
+<td class="tabdata">Varchar2(8 )</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Numer mieszkania adresu</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Kod_pocztowy</td>
+<td class="tabdata"></td>
+<td class="tabdata">Char(6 )</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Kod pocztowy miejscowosci adresu</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Relationship Name</td>
+<td class="tabhead">Relationship Type</td>
+<td class="tabhead">Parent Entity</td>
+<td class="tabhead">Child Entity</td>
+<td class="tabhead">Card.</td>
+</tr>
+<tr>
+<td class="tabdata">Mieszka_pod</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">Adresy</td>
+<td class="tabdata">Pracownicy</td>
+<td class="tabdata">1:1</td>
+</tr>
+<tr>
+<td class="tabdata">Znajduje_sie_pod</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">Adresy</td>
+<td class="tabdata">Parki_rozrywki</td>
+<td class="tabdata">1:1</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="10%">Key Type</td>
+<td class="tabhead" width="30%">Constraint Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="10%">PK</td>
+<td class="tabdata" width="30%">PK_&lt;%OwnerName%&gt;</td>
+<td class="tabdata" width="60%">Id_adresu</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Table_{F7660573-F9AD-4150-AB21-EEAE8229AF6E}" class="item">
+<a name = "Table_{F7660573-F9AD-4150-AB21-EEAE8229AF6E}"></a>
+<div class="caption1"><p>Atrakcje</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">Atrakcje</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Key</td>
+<td class="tabhead">Attribute Name</td>
+<td class="tabhead">Domain</td>
+<td class="tabhead">Data Type</td>
+<td class="tabhead">Not Null</td>
+<td class="tabhead">Unique</td>
+<td class="tabhead">Check</td>
+<td class="tabhead">Default</td>
+<td class="tabhead">Comments</td>
+</tr>
+<tr>
+<td class="tabdata">PK</td>
+<td class="tabdata">Id_atrakcji</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Unikatowy numer atrakcji</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Nazwa_atrakcji</td>
+<td class="tabdata"></td>
+<td class="tabdata">Varchar2(30 )</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Nazwa atrakcji</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Rodzaj_atrakcji</td>
+<td class="tabdata">Rodzaj_atrakcji</td>
+<td class="tabdata">Varchar2(20 )</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">YES</td>
+<td class="tabdata"></td>
+<td class="tabdata">Rodzaj atrakcji</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Ilosc_wagonikow</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Ilosc wagonikow w danej atrakcji</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Czas_trwania</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Czas trwania atrakcji</td>
+</tr>
+<tr>
+<td class="tabdata">FK</td>
+<td class="tabdata">Id_parku_rozrywki</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Klucz obcy Id parku rozrywki</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Relationship Name</td>
+<td class="tabhead">Relationship Type</td>
+<td class="tabhead">Parent Entity</td>
+<td class="tabhead">Child Entity</td>
+<td class="tabhead">Card.</td>
+</tr>
+<tr>
+<td class="tabdata">Atrakcje_Dla_mlodziezy</td>
+<td class="tabdata">Identifying</td>
+<td class="tabdata">Atrakcje</td>
+<td class="tabdata">Dla_mlodziezy</td>
+<td class="tabdata">1:1</td>
+</tr>
+<tr>
+<td class="tabdata">Atrakcje_Dla_dzieci</td>
+<td class="tabdata">Identifying</td>
+<td class="tabdata">Atrakcje</td>
+<td class="tabdata">Dla_dzieci</td>
+<td class="tabdata">1:1</td>
+</tr>
+<tr>
+<td class="tabdata">Atrakcje_Dla_doroslych</td>
+<td class="tabdata">Identifying</td>
+<td class="tabdata">Atrakcje</td>
+<td class="tabdata">Dla_doroslych</td>
+<td class="tabdata">1:1</td>
+</tr>
+<tr>
+<td class="tabdata">Zapewnia</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">Parki_rozrywki</td>
+<td class="tabdata">Atrakcje</td>
+<td class="tabdata">1:N</td>
+</tr>
+<tr>
+<td class="tabdata">Posiada</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">Atrakcje</td>
+<td class="tabdata">Wagoniki</td>
+<td class="tabdata">1:N</td>
+</tr>
+<tr>
+<td class="tabdata">Jest_pod_okiem</td>
+<td class="tabdata">Identifying</td>
+<td class="tabdata">Atrakcje</td>
+<td class="tabdata">Pracownicy_Atrakcje</td>
+<td class="tabdata">1:N</td>
+</tr>
+<tr>
+<td class="tabdata">Wymaga</td>
+<td class="tabdata">Identifying</td>
+<td class="tabdata">Atrakcje</td>
+<td class="tabdata">Atrakcje_Bilety</td>
+<td class="tabdata">1:N</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="10%">Key Type</td>
+<td class="tabhead" width="30%">Constraint Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="10%">PK</td>
+<td class="tabdata" width="30%">Unique_Identifier5</td>
+<td class="tabdata" width="60%">Id_atrakcji</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Indexes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Index Name</td>
+<td class="tabhead">Attributes</td>
+<td class="tabhead">Unique</td>
+</tr>
+<tr>
+<td class="tabdata">Jest_zapewniana</td>
+<td class="tabdata">Id_parku_rozrywki</td>
+<td class="tabdata">NO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Table_{ED8F1789-5F13-48F7-AF6C-EDD5BCDFA1B1}" class="item">
+<a name = "Table_{ED8F1789-5F13-48F7-AF6C-EDD5BCDFA1B1}"></a>
+<div class="caption1"><p>Atrakcje_Bilety</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">Atrakcje_Bilety</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Key</td>
+<td class="tabhead">Attribute Name</td>
+<td class="tabhead">Domain</td>
+<td class="tabhead">Data Type</td>
+<td class="tabhead">Not Null</td>
+<td class="tabhead">Unique</td>
+<td class="tabhead">Check</td>
+<td class="tabhead">Default</td>
+<td class="tabhead">Comments</td>
+</tr>
+<tr>
+<td class="tabdata">PFK</td>
+<td class="tabdata">Id_atrakcji</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">PFK (primary foreign key) Id atrakcji</td>
+</tr>
+<tr>
+<td class="tabdata">PFK</td>
+<td class="tabdata">Id_biletu</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">PFK (primary foreign key) Id biletu</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Relationship Name</td>
+<td class="tabhead">Relationship Type</td>
+<td class="tabhead">Parent Entity</td>
+<td class="tabhead">Child Entity</td>
+<td class="tabhead">Card.</td>
+</tr>
+<tr>
+<td class="tabdata">Wymaga</td>
+<td class="tabdata">Identifying</td>
+<td class="tabdata">Atrakcje</td>
+<td class="tabdata">Atrakcje_Bilety</td>
+<td class="tabdata">1:N</td>
+</tr>
+<tr>
+<td class="tabdata">Jest_wymagany</td>
+<td class="tabdata">Identifying</td>
+<td class="tabdata">Bilety</td>
+<td class="tabdata">Atrakcje_Bilety</td>
+<td class="tabdata">1:N</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="10%">Key Type</td>
+<td class="tabhead" width="30%">Constraint Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="10%">PK</td>
+<td class="tabdata" width="30%">Key5</td>
+<td class="tabdata" width="60%">Id_atrakcji, Id_biletu</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Table_{95ABFC5B-F41B-4BC5-9619-C8E07C725585}" class="item">
+<a name = "Table_{95ABFC5B-F41B-4BC5-9619-C8E07C725585}"></a>
+<div class="caption1"><p>Bilety</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">Bilety</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Key</td>
+<td class="tabhead">Attribute Name</td>
+<td class="tabhead">Domain</td>
+<td class="tabhead">Data Type</td>
+<td class="tabhead">Not Null</td>
+<td class="tabhead">Unique</td>
+<td class="tabhead">Check</td>
+<td class="tabhead">Default</td>
+<td class="tabhead">Comments</td>
+</tr>
+<tr>
+<td class="tabdata">PK</td>
+<td class="tabdata">Id_biletu</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Unikatowy numer biletu</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Rodzaj_biletu</td>
+<td class="tabdata">Rodzaj_biletu</td>
+<td class="tabdata">Varchar2(20 )</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">YES</td>
+<td class="tabdata"></td>
+<td class="tabdata">Rodzaj biletu</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Cena_biletu</td>
+<td class="tabdata"></td>
+<td class="tabdata">Number(10,2)</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Cena biletu</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Data</td>
+<td class="tabdata"></td>
+<td class="tabdata">Date</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Data sprzedazy biletu</td>
+</tr>
+<tr>
+<td class="tabdata">FK</td>
+<td class="tabdata">Id_klienta</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Klucz obcy Id klienta</td>
+</tr>
+<tr>
+<td class="tabdata">FK</td>
+<td class="tabdata">Id_kasy</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Klucz obcy Id kasy</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Relationship Name</td>
+<td class="tabhead">Relationship Type</td>
+<td class="tabhead">Parent Entity</td>
+<td class="tabhead">Child Entity</td>
+<td class="tabhead">Card.</td>
+</tr>
+<tr>
+<td class="tabdata">Kupuje</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">Klienci</td>
+<td class="tabdata">Bilety</td>
+<td class="tabdata">1:N</td>
+</tr>
+<tr>
+<td class="tabdata">Jest_wymagany</td>
+<td class="tabdata">Identifying</td>
+<td class="tabdata">Bilety</td>
+<td class="tabdata">Atrakcje_Bilety</td>
+<td class="tabdata">1:N</td>
+</tr>
+<tr>
+<td class="tabdata">Sprzedaje</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">Kasy</td>
+<td class="tabdata">Bilety</td>
+<td class="tabdata">1:N</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="10%">Key Type</td>
+<td class="tabhead" width="30%">Constraint Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="10%">PK</td>
+<td class="tabdata" width="30%">Unique_Identifier10</td>
+<td class="tabdata" width="60%">Id_biletu</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Indexes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Index Name</td>
+<td class="tabhead">Attributes</td>
+<td class="tabhead">Unique</td>
+</tr>
+<tr>
+<td class="tabdata">Sa_kupowane</td>
+<td class="tabdata">Id_klienta</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabdata">Sa_sprzedawana</td>
+<td class="tabdata">Id_kasy</td>
+<td class="tabdata">NO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Table_{006F24FA-DBF2-45FA-BAD7-8670617602F3}" class="item">
+<a name = "Table_{006F24FA-DBF2-45FA-BAD7-8670617602F3}"></a>
+<div class="caption1"><p>Dla_doroslych</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">Dla doroslych</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Key</td>
+<td class="tabhead">Attribute Name</td>
+<td class="tabhead">Domain</td>
+<td class="tabhead">Data Type</td>
+<td class="tabhead">Not Null</td>
+<td class="tabhead">Unique</td>
+<td class="tabhead">Check</td>
+<td class="tabhead">Default</td>
+<td class="tabhead">Comments</td>
+</tr>
+<tr>
+<td class="tabdata">PFK</td>
+<td class="tabdata">Id_atrakcji</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">PFK (primary foreign key) Id atrakcji</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Wymagany_wiek</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Wymagany wiek aby skorzystac z atrakcji</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Wymagany_wzrost</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Wymagany wzrost aby skorzystac z atrakcji</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Strasznosc</td>
+<td class="tabdata">Strasznosc</td>
+<td class="tabdata">Varchar2(20 )</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">YES</td>
+<td class="tabdata"></td>
+<td class="tabdata">Sztrasznosc atrakcji</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Choroby_serca</td>
+<td class="tabdata">Choroby_serca</td>
+<td class="tabdata">Varchar2(3 )</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">YES</td>
+<td class="tabdata"></td>
+<td class="tabdata">Czy klient posiada choroby serca</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Relationship Name</td>
+<td class="tabhead">Relationship Type</td>
+<td class="tabhead">Parent Entity</td>
+<td class="tabhead">Child Entity</td>
+<td class="tabhead">Card.</td>
+</tr>
+<tr>
+<td class="tabdata">Atrakcje_Dla_doroslych</td>
+<td class="tabdata">Identifying</td>
+<td class="tabdata">Atrakcje</td>
+<td class="tabdata">Dla_doroslych</td>
+<td class="tabdata">1:1</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="10%">Key Type</td>
+<td class="tabhead" width="30%">Constraint Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="10%">PK</td>
+<td class="tabdata" width="30%">Unique_Identifier14</td>
+<td class="tabdata" width="60%">Id_atrakcji</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Table_{AF2D5B90-DA55-47E4-96F5-860BC03469DB}" class="item">
+<a name = "Table_{AF2D5B90-DA55-47E4-96F5-860BC03469DB}"></a>
+<div class="caption1"><p>Dla_dzieci</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">Dla dzieci</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Key</td>
+<td class="tabhead">Attribute Name</td>
+<td class="tabhead">Domain</td>
+<td class="tabhead">Data Type</td>
+<td class="tabhead">Not Null</td>
+<td class="tabhead">Unique</td>
+<td class="tabhead">Check</td>
+<td class="tabhead">Default</td>
+<td class="tabhead">Comments</td>
+</tr>
+<tr>
+<td class="tabdata">PFK</td>
+<td class="tabdata">Id_atrakcji</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">PFK (primary foreign key) Id atrakcji</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Nadzor_rodzica</td>
+<td class="tabdata">Nadzor_rodzica</td>
+<td class="tabdata">Varchar2(3 )</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">YES</td>
+<td class="tabdata"></td>
+<td class="tabdata">Czy wymagany jest nadzor rodzica</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Dla_jakich</td>
+<td class="tabdata">Dla_jakich</td>
+<td class="tabdata">Varchar2(20 )</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">YES</td>
+<td class="tabdata"></td>
+<td class="tabdata">Dla jakich dzieci przeznaczona jest atrakcja</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Relationship Name</td>
+<td class="tabhead">Relationship Type</td>
+<td class="tabhead">Parent Entity</td>
+<td class="tabhead">Child Entity</td>
+<td class="tabhead">Card.</td>
+</tr>
+<tr>
+<td class="tabdata">Atrakcje_Dla_dzieci</td>
+<td class="tabdata">Identifying</td>
+<td class="tabdata">Atrakcje</td>
+<td class="tabdata">Dla_dzieci</td>
+<td class="tabdata">1:1</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="10%">Key Type</td>
+<td class="tabhead" width="30%">Constraint Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="10%">PK</td>
+<td class="tabdata" width="30%">Unique_Identifier16</td>
+<td class="tabdata" width="60%">Id_atrakcji</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Table_{DFAB95FF-C102-4291-9AF5-658596072822}" class="item">
+<a name = "Table_{DFAB95FF-C102-4291-9AF5-658596072822}"></a>
+<div class="caption1"><p>Dla_mlodziezy</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">Dla mlodziezy</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Key</td>
+<td class="tabhead">Attribute Name</td>
+<td class="tabhead">Domain</td>
+<td class="tabhead">Data Type</td>
+<td class="tabhead">Not Null</td>
+<td class="tabhead">Unique</td>
+<td class="tabhead">Check</td>
+<td class="tabhead">Default</td>
+<td class="tabhead">Comments</td>
+</tr>
+<tr>
+<td class="tabdata">PFK</td>
+<td class="tabdata">Id_atrakcji</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">PFK (primary foreign key) Id atrakcji</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Wymagany_wiek</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Wymagany wiek aby skorzystac z atrakcji</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Wymagany_wzrost</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Wymagany wzrost aby skorzystac z atrakcji</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Strasznosc</td>
+<td class="tabdata">Strasznosc</td>
+<td class="tabdata">Varchar2(20 )</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">YES</td>
+<td class="tabdata"></td>
+<td class="tabdata">Sztrasznosc atrakcji</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Relationship Name</td>
+<td class="tabhead">Relationship Type</td>
+<td class="tabhead">Parent Entity</td>
+<td class="tabhead">Child Entity</td>
+<td class="tabhead">Card.</td>
+</tr>
+<tr>
+<td class="tabdata">Atrakcje_Dla_mlodziezy</td>
+<td class="tabdata">Identifying</td>
+<td class="tabdata">Atrakcje</td>
+<td class="tabdata">Dla_mlodziezy</td>
+<td class="tabdata">1:1</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="10%">Key Type</td>
+<td class="tabhead" width="30%">Constraint Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="10%">PK</td>
+<td class="tabdata" width="30%">Unique_Identifier15</td>
+<td class="tabdata" width="60%">Id_atrakcji</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Table_{EECD7A51-B78A-4216-8560-E0492ED5B937}" class="item">
+<a name = "Table_{EECD7A51-B78A-4216-8560-E0492ED5B937}"></a>
+<div class="caption1"><p>Kasy</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">Kasy</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Key</td>
+<td class="tabhead">Attribute Name</td>
+<td class="tabhead">Domain</td>
+<td class="tabhead">Data Type</td>
+<td class="tabhead">Not Null</td>
+<td class="tabhead">Unique</td>
+<td class="tabhead">Check</td>
+<td class="tabhead">Default</td>
+<td class="tabhead">Comments</td>
+</tr>
+<tr>
+<td class="tabdata">PK</td>
+<td class="tabdata">Id_kasy</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Unikatowy numer kasy</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Numer_kasy</td>
+<td class="tabdata"></td>
+<td class="tabdata">Varchar2(2 )</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Numer kasy</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Otwarta</td>
+<td class="tabdata"></td>
+<td class="tabdata">Timestamp(0)</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Czas otwarcia kasy</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Zamknieta</td>
+<td class="tabdata"></td>
+<td class="tabdata">Timestamp(0)</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Czas zamkniecia kasy</td>
+</tr>
+<tr>
+<td class="tabdata">FK</td>
+<td class="tabdata">Id_parku_rozrywki</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Klucz obcy Id parku rozrywki</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Relationship Name</td>
+<td class="tabhead">Relationship Type</td>
+<td class="tabhead">Parent Entity</td>
+<td class="tabhead">Child Entity</td>
+<td class="tabhead">Card.</td>
+</tr>
+<tr>
+<td class="tabdata">Ma</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">Parki_rozrywki</td>
+<td class="tabdata">Kasy</td>
+<td class="tabdata">1:N</td>
+</tr>
+<tr>
+<td class="tabdata">Jest_obslugiwana</td>
+<td class="tabdata">Identifying</td>
+<td class="tabdata">Kasy</td>
+<td class="tabdata">Pracownicy_Kasy</td>
+<td class="tabdata">1:N</td>
+</tr>
+<tr>
+<td class="tabdata">Sprzedaje</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">Kasy</td>
+<td class="tabdata">Bilety</td>
+<td class="tabdata">1:N</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="10%">Key Type</td>
+<td class="tabhead" width="30%">Constraint Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="10%">PK</td>
+<td class="tabdata" width="30%">Unique_Identifier17</td>
+<td class="tabdata" width="60%">Id_kasy</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Indexes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Index Name</td>
+<td class="tabhead">Attributes</td>
+<td class="tabhead">Unique</td>
+</tr>
+<tr>
+<td class="tabdata">Jest_w</td>
+<td class="tabdata">Id_parku_rozrywki</td>
+<td class="tabdata">NO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Table_{7EE6F4D5-677B-4EC0-BAA1-2DB5192C1456}" class="item">
+<a name = "Table_{7EE6F4D5-677B-4EC0-BAA1-2DB5192C1456}"></a>
+<div class="caption1"><p>Klienci</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">Klienci</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Key</td>
+<td class="tabhead">Attribute Name</td>
+<td class="tabhead">Domain</td>
+<td class="tabhead">Data Type</td>
+<td class="tabhead">Not Null</td>
+<td class="tabhead">Unique</td>
+<td class="tabhead">Check</td>
+<td class="tabhead">Default</td>
+<td class="tabhead">Comments</td>
+</tr>
+<tr>
+<td class="tabdata">PK</td>
+<td class="tabdata">Id_klienta</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Unikatowy numer klienia</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Imie_klienta</td>
+<td class="tabdata"></td>
+<td class="tabdata">Varchar2(20 )</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Imie klienta</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Nazwisko_klienta</td>
+<td class="tabdata"></td>
+<td class="tabdata">Varchar2(30 )</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Nazwisko klienta</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Plec_klienta</td>
+<td class="tabdata">Plec</td>
+<td class="tabdata">Char(1 )</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">YES</td>
+<td class="tabdata"></td>
+<td class="tabdata">Plec klienta</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Data_urodzenia_klienta</td>
+<td class="tabdata"></td>
+<td class="tabdata">Date</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Data urodzenia klienta</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Wzrost</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Wzrost klienta</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Adres_mailowy_klienta</td>
+<td class="tabdata"></td>
+<td class="tabdata">Varchar2(60 )</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Adres e-mail klienta</td>
+</tr>
+<tr>
+<td class="tabdata">FK</td>
+<td class="tabdata">Id_parku_rozrywki</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Klucz obcy Id parku rozrywki</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Relationship Name</td>
+<td class="tabhead">Relationship Type</td>
+<td class="tabhead">Parent Entity</td>
+<td class="tabhead">Child Entity</td>
+<td class="tabhead">Card.</td>
+</tr>
+<tr>
+<td class="tabdata">Zabawia</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">Parki_rozrywki</td>
+<td class="tabdata">Klienci</td>
+<td class="tabdata">1:N</td>
+</tr>
+<tr>
+<td class="tabdata">Kupuje</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">Klienci</td>
+<td class="tabdata">Bilety</td>
+<td class="tabdata">1:N</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="10%">Key Type</td>
+<td class="tabhead" width="30%">Constraint Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="10%">PK</td>
+<td class="tabdata" width="30%">Unique_Identifier4</td>
+<td class="tabdata" width="60%">Id_klienta</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Indexes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Index Name</td>
+<td class="tabhead">Attributes</td>
+<td class="tabhead">Unique</td>
+</tr>
+<tr>
+<td class="tabdata">Jest_zabawiany</td>
+<td class="tabdata">Id_parku_rozrywki</td>
+<td class="tabdata">NO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Table_{2401C119-2308-472E-9428-B000D40675B1}" class="item">
+<a name = "Table_{2401C119-2308-472E-9428-B000D40675B1}"></a>
+<div class="caption1"><p>Parki_rozrywki</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">Parki rozrywki</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Key</td>
+<td class="tabhead">Attribute Name</td>
+<td class="tabhead">Domain</td>
+<td class="tabhead">Data Type</td>
+<td class="tabhead">Not Null</td>
+<td class="tabhead">Unique</td>
+<td class="tabhead">Check</td>
+<td class="tabhead">Default</td>
+<td class="tabhead">Comments</td>
+</tr>
+<tr>
+<td class="tabdata">PK</td>
+<td class="tabdata">Id_parku_rozrywki</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Unikatowy numer parku rozrywki</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Nazwa_parku</td>
+<td class="tabdata"></td>
+<td class="tabdata">Varchar2(30 )</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Nazwa parku rozrywki</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Powierzchnia</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Powierzchnia parku rozrywki</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Ilosc_atrakcji</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Ilosc atrakcji w parku rozrywki</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Numer_telefonu_parku</td>
+<td class="tabdata"></td>
+<td class="tabdata">Varchar2(9 )</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Numer telefonu do parku rozrywki</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Adres_mailowy_parku</td>
+<td class="tabdata"></td>
+<td class="tabdata">Varchar2(60 )</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Adres e-mail do parku rozrywki</td>
+</tr>
+<tr>
+<td class="tabdata">FK</td>
+<td class="tabdata">Id_adresu</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Klucz obcy Id adresu</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Relationship Name</td>
+<td class="tabhead">Relationship Type</td>
+<td class="tabhead">Parent Entity</td>
+<td class="tabhead">Child Entity</td>
+<td class="tabhead">Card.</td>
+</tr>
+<tr>
+<td class="tabdata">Zatrudnia</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">Parki_rozrywki</td>
+<td class="tabdata">Pracownicy</td>
+<td class="tabdata">1:N</td>
+</tr>
+<tr>
+<td class="tabdata">Zapewnia</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">Parki_rozrywki</td>
+<td class="tabdata">Atrakcje</td>
+<td class="tabdata">1:N</td>
+</tr>
+<tr>
+<td class="tabdata">Zabawia</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">Parki_rozrywki</td>
+<td class="tabdata">Klienci</td>
+<td class="tabdata">1:N</td>
+</tr>
+<tr>
+<td class="tabdata">Ma</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">Parki_rozrywki</td>
+<td class="tabdata">Kasy</td>
+<td class="tabdata">1:N</td>
+</tr>
+<tr>
+<td class="tabdata">Umozliwia</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">Parki_rozrywki</td>
+<td class="tabdata">Przekaski</td>
+<td class="tabdata">1:N</td>
+</tr>
+<tr>
+<td class="tabdata">Jest_zarzadzany_przez</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">Parki_rozrywki</td>
+<td class="tabdata">Wlasciciele</td>
+<td class="tabdata">1:1</td>
+</tr>
+<tr>
+<td class="tabdata">Znajduje_sie_pod</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">Adresy</td>
+<td class="tabdata">Parki_rozrywki</td>
+<td class="tabdata">1:1</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="10%">Key Type</td>
+<td class="tabhead" width="30%">Constraint Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="10%">PK</td>
+<td class="tabdata" width="30%">Unique_Identifier1</td>
+<td class="tabdata" width="60%">Id_parku_rozrywki</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Indexes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Index Name</td>
+<td class="tabhead">Attributes</td>
+<td class="tabhead">Unique</td>
+</tr>
+<tr>
+<td class="tabdata">Znajduje_sie</td>
+<td class="tabdata">Id_adresu</td>
+<td class="tabdata">NO</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Triggers</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="100%">Trigger Name</td>
+</tr>
+<tr>
+<td class="tabdata" width="100%">ParkRozrywkiT1</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Table_{43D132F6-4587-4783-83F1-65DD123DADA8}" class="item">
+<a name = "Table_{43D132F6-4587-4783-83F1-65DD123DADA8}"></a>
+<div class="caption1"><p>Pracownicy</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">Pracownicy</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Key</td>
+<td class="tabhead">Attribute Name</td>
+<td class="tabhead">Domain</td>
+<td class="tabhead">Data Type</td>
+<td class="tabhead">Not Null</td>
+<td class="tabhead">Unique</td>
+<td class="tabhead">Check</td>
+<td class="tabhead">Default</td>
+<td class="tabhead">Comments</td>
+</tr>
+<tr>
+<td class="tabdata">PK</td>
+<td class="tabdata">Id_pracownika</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Unikatowy numer pracownika</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Imie_pracownika</td>
+<td class="tabdata"></td>
+<td class="tabdata">Varchar2(20 )</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Imie pracownika</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Nazwisko_pracownika</td>
+<td class="tabdata"></td>
+<td class="tabdata">Varchar2(30 )</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Nazwisko pracownika</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Plec_pracownika</td>
+<td class="tabdata">Plec</td>
+<td class="tabdata">Char(1 )</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">YES</td>
+<td class="tabdata"></td>
+<td class="tabdata">Plec pracownika</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Data_urodzenia_pracownika</td>
+<td class="tabdata"></td>
+<td class="tabdata">Date</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Data urodzenia pracownika</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">PESEL</td>
+<td class="tabdata"></td>
+<td class="tabdata">Char(11 )</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">PESEL pracownika</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Data_zatrudnienia</td>
+<td class="tabdata"></td>
+<td class="tabdata">Date</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Data zatrudnienia pracownika</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Numer_dokument</td>
+<td class="tabdata"></td>
+<td class="tabdata">Char(9 )</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Numer dokumentu pracownika</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Numer_konta</td>
+<td class="tabdata"></td>
+<td class="tabdata">Char(26 )</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Numer konta bankowego pracownika</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Numer_telefonu_pracownika</td>
+<td class="tabdata"></td>
+<td class="tabdata">Varchar2(9 )</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Numer telefonu pracownika</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Adres_mailowy_pracownika</td>
+<td class="tabdata"></td>
+<td class="tabdata">Varchar2(60 )</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Adres e-mail pracownika</td>
+</tr>
+<tr>
+<td class="tabdata">FK</td>
+<td class="tabdata">Id_parku_rozrywki</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Klucz obcy Id praku rozrywki</td>
+</tr>
+<tr>
+<td class="tabdata">FK</td>
+<td class="tabdata">Id_adresu</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Klucz obcy Id adresu</td>
+</tr>
+<tr>
+<td class="tabdata">FK</td>
+<td class="tabdata">Id_stanowiska</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Klucz obcy Id stanowiska</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Relationship Name</td>
+<td class="tabhead">Relationship Type</td>
+<td class="tabhead">Parent Entity</td>
+<td class="tabhead">Child Entity</td>
+<td class="tabhead">Card.</td>
+</tr>
+<tr>
+<td class="tabdata">Zatrudnia</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">Parki_rozrywki</td>
+<td class="tabdata">Pracownicy</td>
+<td class="tabdata">1:N</td>
+</tr>
+<tr>
+<td class="tabdata">Otrzymuje</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">Pracownicy</td>
+<td class="tabdata">Wynagrodzenia</td>
+<td class="tabdata">1:N</td>
+</tr>
+<tr>
+<td class="tabdata">Pracuje_przy</td>
+<td class="tabdata">Identifying</td>
+<td class="tabdata">Pracownicy</td>
+<td class="tabdata">Pracownicy_Atrakcje</td>
+<td class="tabdata">1:N</td>
+</tr>
+<tr>
+<td class="tabdata">Mieszka_pod</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">Adresy</td>
+<td class="tabdata">Pracownicy</td>
+<td class="tabdata">1:1</td>
+</tr>
+<tr>
+<td class="tabdata">Obsluguje</td>
+<td class="tabdata">Identifying</td>
+<td class="tabdata">Pracownicy</td>
+<td class="tabdata">Pracownicy_Kasy</td>
+<td class="tabdata">1:N</td>
+</tr>
+<tr>
+<td class="tabdata">Jest_zatrudniony_na</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">Stanowiska</td>
+<td class="tabdata">Pracownicy</td>
+<td class="tabdata">1:N</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="10%">Key Type</td>
+<td class="tabhead" width="30%">Constraint Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="10%">PK</td>
+<td class="tabdata" width="30%">Unique_Identifier2</td>
+<td class="tabdata" width="60%">Id_pracownika</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Indexes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Index Name</td>
+<td class="tabhead">Attributes</td>
+<td class="tabhead">Unique</td>
+</tr>
+<tr>
+<td class="tabdata">Jest_zatrudniany</td>
+<td class="tabdata">Id_parku_rozrywki</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabdata">Mieszka</td>
+<td class="tabdata">Id_adresu</td>
+<td class="tabdata">NO</td>
+</tr>
+<tr>
+<td class="tabdata">Pracuje_na</td>
+<td class="tabdata">Id_stanowiska</td>
+<td class="tabdata">NO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Table_{09902188-B092-4656-9742-221EF2C95957}" class="item">
+<a name = "Table_{09902188-B092-4656-9742-221EF2C95957}"></a>
+<div class="caption1"><p>Pracownicy_Atrakcje</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">Pracownicy_Atrakcje</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Key</td>
+<td class="tabhead">Attribute Name</td>
+<td class="tabhead">Domain</td>
+<td class="tabhead">Data Type</td>
+<td class="tabhead">Not Null</td>
+<td class="tabhead">Unique</td>
+<td class="tabhead">Check</td>
+<td class="tabhead">Default</td>
+<td class="tabhead">Comments</td>
+</tr>
+<tr>
+<td class="tabdata">PFK</td>
+<td class="tabdata">Id_pracownika</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">PFK (primary foreign key) Id pracownika</td>
+</tr>
+<tr>
+<td class="tabdata">PFK</td>
+<td class="tabdata">Id_atrakcji</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">PFK (primary foreign key) Id atrakcji</td>
+</tr>
+<tr>
+<td class="tabdata">PK</td>
+<td class="tabdata">Data_Od</td>
+<td class="tabdata"></td>
+<td class="tabdata">Date</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Pracownik pracuje przy atrakcji od danej daty</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Data_Do</td>
+<td class="tabdata"></td>
+<td class="tabdata">Date</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Pracownik pracuje przy atrakcji do danej daty</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Relationship Name</td>
+<td class="tabhead">Relationship Type</td>
+<td class="tabhead">Parent Entity</td>
+<td class="tabhead">Child Entity</td>
+<td class="tabhead">Card.</td>
+</tr>
+<tr>
+<td class="tabdata">Pracuje_przy</td>
+<td class="tabdata">Identifying</td>
+<td class="tabdata">Pracownicy</td>
+<td class="tabdata">Pracownicy_Atrakcje</td>
+<td class="tabdata">1:N</td>
+</tr>
+<tr>
+<td class="tabdata">Jest_pod_okiem</td>
+<td class="tabdata">Identifying</td>
+<td class="tabdata">Atrakcje</td>
+<td class="tabdata">Pracownicy_Atrakcje</td>
+<td class="tabdata">1:N</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="10%">Key Type</td>
+<td class="tabhead" width="30%">Constraint Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="10%">PK</td>
+<td class="tabdata" width="30%">Key1</td>
+<td class="tabdata" width="60%">Id_pracownika, Id_atrakcji, Data_Od</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Table_{6610DC74-323D-4E4D-A019-869803B99112}" class="item">
+<a name = "Table_{6610DC74-323D-4E4D-A019-869803B99112}"></a>
+<div class="caption1"><p>Pracownicy_Kasy</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">Pracownicy_Kasy</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Key</td>
+<td class="tabhead">Attribute Name</td>
+<td class="tabhead">Domain</td>
+<td class="tabhead">Data Type</td>
+<td class="tabhead">Not Null</td>
+<td class="tabhead">Unique</td>
+<td class="tabhead">Check</td>
+<td class="tabhead">Default</td>
+<td class="tabhead">Comments</td>
+</tr>
+<tr>
+<td class="tabdata">PFK</td>
+<td class="tabdata">Id_pracownika</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">PFK (primary foreign key) Id pracownika</td>
+</tr>
+<tr>
+<td class="tabdata">PFK</td>
+<td class="tabdata">Id_kasy</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">PFK (primary foreign key) Id kasy</td>
+</tr>
+<tr>
+<td class="tabdata">PK</td>
+<td class="tabdata">Data_Od</td>
+<td class="tabdata"></td>
+<td class="tabdata">Date</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Pracownik pracuje na kasie od danej daty</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Data_Do</td>
+<td class="tabdata"></td>
+<td class="tabdata">Date</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Pracownik pracuje na kasie do danej daty</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Relationship Name</td>
+<td class="tabhead">Relationship Type</td>
+<td class="tabhead">Parent Entity</td>
+<td class="tabhead">Child Entity</td>
+<td class="tabhead">Card.</td>
+</tr>
+<tr>
+<td class="tabdata">Obsluguje</td>
+<td class="tabdata">Identifying</td>
+<td class="tabdata">Pracownicy</td>
+<td class="tabdata">Pracownicy_Kasy</td>
+<td class="tabdata">1:N</td>
+</tr>
+<tr>
+<td class="tabdata">Jest_obslugiwana</td>
+<td class="tabdata">Identifying</td>
+<td class="tabdata">Kasy</td>
+<td class="tabdata">Pracownicy_Kasy</td>
+<td class="tabdata">1:N</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="10%">Key Type</td>
+<td class="tabhead" width="30%">Constraint Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="10%">PK</td>
+<td class="tabdata" width="30%">PK_&lt;%OwnerName%&gt;</td>
+<td class="tabdata" width="60%">Id_pracownika, Id_kasy, Data_Od</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Table_{6F303977-F508-4BBB-A392-A06A97181712}" class="item">
+<a name = "Table_{6F303977-F508-4BBB-A392-A06A97181712}"></a>
+<div class="caption1"><p>Przekaski</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">Przekaski</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Key</td>
+<td class="tabhead">Attribute Name</td>
+<td class="tabhead">Domain</td>
+<td class="tabhead">Data Type</td>
+<td class="tabhead">Not Null</td>
+<td class="tabhead">Unique</td>
+<td class="tabhead">Check</td>
+<td class="tabhead">Default</td>
+<td class="tabhead">Comments</td>
+</tr>
+<tr>
+<td class="tabdata">PK</td>
+<td class="tabdata">Id_przekaski</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Unikatowy numer przekaski</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Nazwa_przekaski</td>
+<td class="tabdata"></td>
+<td class="tabdata">Varchar2(30 )</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Nazwa przekaski</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Cena_przekaski</td>
+<td class="tabdata"></td>
+<td class="tabdata">Number(10,2)</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Cena przekaski</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Sklad</td>
+<td class="tabdata"></td>
+<td class="tabdata">Varchar2(400 )</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Opis skladnikow znajdujacych sie w przekasce</td>
+</tr>
+<tr>
+<td class="tabdata">FK</td>
+<td class="tabdata">Id_parku_rozrywki</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Klucz obcy Id parku rozrywki</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Relationship Name</td>
+<td class="tabhead">Relationship Type</td>
+<td class="tabhead">Parent Entity</td>
+<td class="tabhead">Child Entity</td>
+<td class="tabhead">Card.</td>
+</tr>
+<tr>
+<td class="tabdata">Umozliwia</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">Parki_rozrywki</td>
+<td class="tabdata">Przekaski</td>
+<td class="tabdata">1:N</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="10%">Key Type</td>
+<td class="tabhead" width="30%">Constraint Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="10%">PK</td>
+<td class="tabdata" width="30%">Unique_Identifier12</td>
+<td class="tabdata" width="60%">Id_przekaski</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Indexes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Index Name</td>
+<td class="tabhead">Attributes</td>
+<td class="tabhead">Unique</td>
+</tr>
+<tr>
+<td class="tabdata">Jest_dostepna</td>
+<td class="tabdata">Id_parku_rozrywki</td>
+<td class="tabdata">NO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Table_{612B1027-3DB6-4BAB-A5BD-ADBAA44BBAF9}" class="item">
+<a name = "Table_{612B1027-3DB6-4BAB-A5BD-ADBAA44BBAF9}"></a>
+<div class="caption1"><p>Stanowiska</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">Stanowiska</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Key</td>
+<td class="tabhead">Attribute Name</td>
+<td class="tabhead">Domain</td>
+<td class="tabhead">Data Type</td>
+<td class="tabhead">Not Null</td>
+<td class="tabhead">Unique</td>
+<td class="tabhead">Check</td>
+<td class="tabhead">Default</td>
+<td class="tabhead">Comments</td>
+</tr>
+<tr>
+<td class="tabdata">PK</td>
+<td class="tabdata">Id_stanowiska</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Unikatowy numer stanowiska</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Miejsce_pracy</td>
+<td class="tabdata">Stanowisko</td>
+<td class="tabdata">Varchar2(20 )</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">YES</td>
+<td class="tabdata"></td>
+<td class="tabdata">Miejsce wykonywania danego stanowiska</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Opis</td>
+<td class="tabdata"></td>
+<td class="tabdata">Varchar2(400 )</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Opis stanowiska</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Relationship Name</td>
+<td class="tabhead">Relationship Type</td>
+<td class="tabhead">Parent Entity</td>
+<td class="tabhead">Child Entity</td>
+<td class="tabhead">Card.</td>
+</tr>
+<tr>
+<td class="tabdata">Jest_zatrudniony_na</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">Stanowiska</td>
+<td class="tabdata">Pracownicy</td>
+<td class="tabdata">1:N</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="10%">Key Type</td>
+<td class="tabhead" width="30%">Constraint Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="10%">PK</td>
+<td class="tabdata" width="30%">PK_&lt;%OwnerName%&gt;</td>
+<td class="tabdata" width="60%">Id_stanowiska</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Table_{5B1F5D5F-E8FE-4832-87B7-FFC31E1B94F7}" class="item">
+<a name = "Table_{5B1F5D5F-E8FE-4832-87B7-FFC31E1B94F7}"></a>
+<div class="caption1"><p>Wagoniki</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">Wagoniki</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Key</td>
+<td class="tabhead">Attribute Name</td>
+<td class="tabhead">Domain</td>
+<td class="tabhead">Data Type</td>
+<td class="tabhead">Not Null</td>
+<td class="tabhead">Unique</td>
+<td class="tabhead">Check</td>
+<td class="tabhead">Default</td>
+<td class="tabhead">Comments</td>
+</tr>
+<tr>
+<td class="tabdata">PK</td>
+<td class="tabdata">Id_wagonika</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Unikatowy numer wagonika</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Marka</td>
+<td class="tabdata"></td>
+<td class="tabdata">Varchar2(30 )</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Marka wagonika</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Model</td>
+<td class="tabdata"></td>
+<td class="tabdata">Varchar2(30 )</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Model wagonika</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Rodzaj_wagonika</td>
+<td class="tabdata">Rodzaj_wagonika</td>
+<td class="tabdata">Varchar2(20 )</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">YES</td>
+<td class="tabdata"></td>
+<td class="tabdata">Rodzaj wagonika w danej atrakcji</td>
+</tr>
+<tr>
+<td class="tabdata">FK</td>
+<td class="tabdata">Id_atrakcji</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Klucz obcy Id atrakcji</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Relationship Name</td>
+<td class="tabhead">Relationship Type</td>
+<td class="tabhead">Parent Entity</td>
+<td class="tabhead">Child Entity</td>
+<td class="tabhead">Card.</td>
+</tr>
+<tr>
+<td class="tabdata">Posiada</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">Atrakcje</td>
+<td class="tabdata">Wagoniki</td>
+<td class="tabdata">1:N</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="10%">Key Type</td>
+<td class="tabhead" width="30%">Constraint Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="10%">PK</td>
+<td class="tabdata" width="30%">Unique_Identifier11</td>
+<td class="tabdata" width="60%">Id_wagonika</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Indexes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Index Name</td>
+<td class="tabhead">Attributes</td>
+<td class="tabhead">Unique</td>
+</tr>
+<tr>
+<td class="tabdata">Jest_przypisany</td>
+<td class="tabdata">Id_atrakcji</td>
+<td class="tabdata">NO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Table_{CEB464DA-44B9-432C-8426-CA3FC00611F4}" class="item">
+<a name = "Table_{CEB464DA-44B9-432C-8426-CA3FC00611F4}"></a>
+<div class="caption1"><p>Wlasciciele</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">Wlasciciele</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Key</td>
+<td class="tabhead">Attribute Name</td>
+<td class="tabhead">Domain</td>
+<td class="tabhead">Data Type</td>
+<td class="tabhead">Not Null</td>
+<td class="tabhead">Unique</td>
+<td class="tabhead">Check</td>
+<td class="tabhead">Default</td>
+<td class="tabhead">Comments</td>
+</tr>
+<tr>
+<td class="tabdata">PK</td>
+<td class="tabdata">Id_wlasciciela</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Unikatowy numer wlasciciela</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Imie_wlasciciela</td>
+<td class="tabdata"></td>
+<td class="tabdata">Varchar2(20 )</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Imie wlasciciela</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Nazwisko_wlasciciela</td>
+<td class="tabdata"></td>
+<td class="tabdata">Varchar2(30 )</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Nazwisko wlasciciela</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Numer_telefonu_wlasciciela</td>
+<td class="tabdata"></td>
+<td class="tabdata">Varchar2(9 )</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Numer telefonu do wlasciciela</td>
+</tr>
+<tr>
+<td class="tabdata">FK</td>
+<td class="tabdata">Id_parku_rozrywki</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Klucz obcy Id parku rozrywki</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Relationship Name</td>
+<td class="tabhead">Relationship Type</td>
+<td class="tabhead">Parent Entity</td>
+<td class="tabhead">Child Entity</td>
+<td class="tabhead">Card.</td>
+</tr>
+<tr>
+<td class="tabdata">Jest_zarzadzany_przez</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">Parki_rozrywki</td>
+<td class="tabdata">Wlasciciele</td>
+<td class="tabdata">1:1</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="10%">Key Type</td>
+<td class="tabhead" width="30%">Constraint Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="10%">PK</td>
+<td class="tabdata" width="30%">PK_&lt;%OwnerName%&gt;</td>
+<td class="tabdata" width="60%">Id_wlasciciela</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Indexes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Index Name</td>
+<td class="tabhead">Attributes</td>
+<td class="tabhead">Unique</td>
+</tr>
+<tr>
+<td class="tabdata">Zarzadza</td>
+<td class="tabdata">Id_parku_rozrywki</td>
+<td class="tabdata">NO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Table_{8831B7CF-EEB7-49C1-811E-DAF774F5A550}" class="item">
+<a name = "Table_{8831B7CF-EEB7-49C1-811E-DAF774F5A550}"></a>
+<div class="caption1"><p>Wynagrodzenia</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">Wynagrodzenia</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Key</td>
+<td class="tabhead">Attribute Name</td>
+<td class="tabhead">Domain</td>
+<td class="tabhead">Data Type</td>
+<td class="tabhead">Not Null</td>
+<td class="tabhead">Unique</td>
+<td class="tabhead">Check</td>
+<td class="tabhead">Default</td>
+<td class="tabhead">Comments</td>
+</tr>
+<tr>
+<td class="tabdata">PK</td>
+<td class="tabdata">Id_wynagrodzenia</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Unikatowy numer wynagrodzenia</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Data_wyplacania</td>
+<td class="tabdata"></td>
+<td class="tabdata">Date</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Data wyplacania wynagrodzenia</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Wysokosc</td>
+<td class="tabdata"></td>
+<td class="tabdata">Number(10,2)</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Wysokosc wynagrodzenia</td>
+</tr>
+<tr>
+<td class="tabdata"></td>
+<td class="tabdata">Dodatki</td>
+<td class="tabdata"></td>
+<td class="tabdata">Number(10,2)</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Dodatki do wynagrodzenia</td>
+</tr>
+<tr>
+<td class="tabdata">FK</td>
+<td class="tabdata">Id_pracownika</td>
+<td class="tabdata"></td>
+<td class="tabdata">Integer</td>
+<td class="tabdata">YES</td>
+<td class="tabdata">NO</td>
+<td class="tabdata">NO</td>
+<td class="tabdata"></td>
+<td class="tabdata">Klucz obcy Id pracownika</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Relationship Name</td>
+<td class="tabhead">Relationship Type</td>
+<td class="tabhead">Parent Entity</td>
+<td class="tabhead">Child Entity</td>
+<td class="tabhead">Card.</td>
+</tr>
+<tr>
+<td class="tabdata">Otrzymuje</td>
+<td class="tabdata">Non-identifying</td>
+<td class="tabdata">Pracownicy</td>
+<td class="tabdata">Wynagrodzenia</td>
+<td class="tabdata">1:N</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Keys</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="10%">Key Type</td>
+<td class="tabhead" width="30%">Constraint Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="10%">PK</td>
+<td class="tabdata" width="30%">Unique_Identifier3</td>
+<td class="tabdata" width="60%">Id_wynagrodzenia</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Indexes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead">Index Name</td>
+<td class="tabhead">Attributes</td>
+<td class="tabhead">Unique</td>
+</tr>
+<tr>
+<td class="tabdata">Jest_wyplacane</td>
+<td class="tabdata">Id_pracownika</td>
+<td class="tabdata">NO</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+</div><div id="footer"><div class="pageFooter">Copyright &copy; Sitename 2005</div><div class="footerEnd"><p></p></div></div></div></div></body></html>

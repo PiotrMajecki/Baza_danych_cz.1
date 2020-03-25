@@ -1,0 +1,1079 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="keywords" content="TDM_Report">
+        <link rel="stylesheet" type="text/css" media="screen" href="anim.css" title="report">
+        <link rel="stylesheet" type="text/css" media="print" href="anim_NoFrames_print.css" title="report">
+            <script src="tdmShowDetails.js" type="text/javascript"></script>
+        <title>Toad Data Modeler - HTML Report</title>
+    </head>
+
+<body onLoad="getUrlItem()"><div class="mainContainer"><div id="headerContainer"><div id="header"><div class="title1"></div><div class="title2">Entities</div><div class="reportStats">czwartek, 12 grudnia 2019 13:31:59</div><div class="titleimage"><a href="https://www.quest.com/" target="_blank"><img src="Img/logo.png" alt="Made with Toad Data Modeler" border="0" /></a></div><div class="headerEnd"><p>&nbsp;</p></div></div><div id="navTop"><ul><li><a href="MInfo.html">Model Info</a></li><li><a href="MImage.html">ER Diagram</a></li><li class="selLi"><a href="Entities.html" class="selAnchor">Entities</a></li><li><a href="Attributes.html">Attributes</a></li><li><a href="UniqueIdentifiers.html">Unique Identifiers</a></li><li><a href="Relations.html">Relationships</a></li><li><a href="Inheritances.html">Inheritances</a></li><li><a href="Domains.html">Domains</a></li><li><a href="Rules.html">Rules</a></li></ul><div id="navTopEnd"><p>&nbsp;</p></div></div></div><div id="navCombo"><form name="allItems" action=""><select name="listOfItems" onChange="showSelected()"><option value="Entity_{D2116FDB-7AE9-4F86-B288-CD197D9C112C}">Atrakcja</option><option value="Entity_{BCAEB52F-1BBC-4713-BD2A-C46BCD641DC0}">Bilet</option><option value="Entity_{C391E82E-2614-4AB2-9B64-10169814B053}">Dla_doroslych</option><option value="Entity_{47C55D1A-3390-435A-ACAF-0A463C2CC859}">Dla_dzieci</option><option value="Entity_{92BBC7E5-1ABD-4EA6-B1D8-9EF3C91CCAAA}">Dla_mlodziezy</option><option value="Entity_{F929885B-D196-4FF6-9ACC-98E80F50E15C}">Kasa</option><option value="Entity_{40EABE4D-D9AC-499D-BB2B-E6541E2A4BF4}">Klient</option><option value="Entity_{7DDFBD72-0853-4C09-B455-47001215E6AC}">Park_rozrywki</option><option value="Entity_{3A1DEB76-E2DF-40C3-8FF7-C0720B921664}">Pracownik</option><option value="Entity_{906ED2E6-4EC9-4951-B120-2799A79DFACE}">Przekaska</option><option value="Entity_{781840F0-83A9-4AAE-AA45-4D43EC23DF3D}">Wagonik</option><option value="Entity_{0BCC48F5-2916-4925-88B8-FFEE1A288E43}">Wynagrodzenie</option></select></form><div id="navComboEnd"><p></p></div></div><div id="navLeft"><div id="bookmark"><ul><li><a onClick="return showDetail('Entity_{D2116FDB-7AE9-4F86-B288-CD197D9C112C}', this)">Atrakcja</a></li><li><a onClick="return showDetail('Entity_{BCAEB52F-1BBC-4713-BD2A-C46BCD641DC0}', this)">Bilet</a></li><li><a onClick="return showDetail('Entity_{C391E82E-2614-4AB2-9B64-10169814B053}', this)">Dla_doroslych</a></li><li><a onClick="return showDetail('Entity_{47C55D1A-3390-435A-ACAF-0A463C2CC859}', this)">Dla_dzieci</a></li><li><a onClick="return showDetail('Entity_{92BBC7E5-1ABD-4EA6-B1D8-9EF3C91CCAAA}', this)">Dla_mlodziezy</a></li><li><a onClick="return showDetail('Entity_{F929885B-D196-4FF6-9ACC-98E80F50E15C}', this)">Kasa</a></li><li><a onClick="return showDetail('Entity_{40EABE4D-D9AC-499D-BB2B-E6541E2A4BF4}', this)">Klient</a></li><li><a onClick="return showDetail('Entity_{7DDFBD72-0853-4C09-B455-47001215E6AC}', this)">Park_rozrywki</a></li><li><a onClick="return showDetail('Entity_{3A1DEB76-E2DF-40C3-8FF7-C0720B921664}', this)">Pracownik</a></li><li><a onClick="return showDetail('Entity_{906ED2E6-4EC9-4951-B120-2799A79DFACE}', this)">Przekaska</a></li><li><a onClick="return showDetail('Entity_{781840F0-83A9-4AAE-AA45-4D43EC23DF3D}', this)">Wagonik</a></li><li><a onClick="return showDetail('Entity_{0BCC48F5-2916-4925-88B8-FFEE1A288E43}', this)">Wynagrodzenie</a></li></ul><div id="bookmarkEnd"><p>&nbsp;</p></div></div></div><div class="separator" ></div><div class="container"><div id="content"><div id="Entity_{D2116FDB-7AE9-4F86-B288-CD197D9C112C}" class="item">
+<a name = "Entity_{D2116FDB-7AE9-4F86-B288-CD197D9C112C}"></a>
+<div class="caption1"><p>Atrakcja</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">Atrakcja</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Primary Unique Identifier</td>
+<td class="tabhead" width="20%">Attribute Name</td>
+<td class="tabhead" width="20%">Domain</td>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabhead" width="20%">Default Name</td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">YES</td>
+<td class="tabdata" width="20%">Id_atrakcji</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">Integer</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Nazwa_atrakcji</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">VarChar(30)</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Rodzaj_atrakcji</td>
+<td class="tabdata" width="20%">Rodzaj_atrakcji</td>
+<td class="tabdata" width="20%">VarChar(20)</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Ilosc_wagonikow</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">Integer</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Czas_trwania</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">Integer</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Relationship Name</td>
+<td class="tabhead" width="20%">Relationship Type</td>
+<td class="tabhead" width="40%">Relationship Between</td>
+<td class="tabhead" width="20%">Cardinality</td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">Zapewnia</td>
+<td class="tabdata" width="20%">Non-Identifying</td>
+<td class="tabdata" width="40%">Park_rozrywki - Atrakcja</td>
+<td class="tabdata" width="20%">1..1 - 0..m</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Unique Identifiers</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Primary Unique Identifier</td>
+<td class="tabhead" width="20%">Unique Identifier Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">YES</td>
+<td class="tabdata" width="20%">Unique_Identifier5</td>
+<td class="tabdata" width="60%">Id_atrakcji</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Description</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata">Atrakcja znajdujaca się w parku rozrywki</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Entity_{BCAEB52F-1BBC-4713-BD2A-C46BCD641DC0}" class="item">
+<a name = "Entity_{BCAEB52F-1BBC-4713-BD2A-C46BCD641DC0}"></a>
+<div class="caption1"><p>Bilet</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">Bilet</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Primary Unique Identifier</td>
+<td class="tabhead" width="20%">Attribute Name</td>
+<td class="tabhead" width="20%">Domain</td>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabhead" width="20%">Default Name</td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">YES</td>
+<td class="tabdata" width="20%">Id_biletu</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">Integer</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Rodzaj_biletu</td>
+<td class="tabdata" width="20%">Rodzaj_biletu</td>
+<td class="tabdata" width="20%">VarChar(20)</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Cena_biletu</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">Money</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Data</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">Date</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Relationship Name</td>
+<td class="tabhead" width="20%">Relationship Type</td>
+<td class="tabhead" width="40%">Relationship Between</td>
+<td class="tabhead" width="20%">Cardinality</td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">Kupuje</td>
+<td class="tabdata" width="20%">Non-Identifying</td>
+<td class="tabdata" width="40%">Klient - Bilet</td>
+<td class="tabdata" width="20%">0..1 - 0..m</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Unique Identifiers</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Primary Unique Identifier</td>
+<td class="tabhead" width="20%">Unique Identifier Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">YES</td>
+<td class="tabdata" width="20%">Unique_Identifier10</td>
+<td class="tabdata" width="60%">Id_biletu</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Description</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata">Opis biletu</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Entity_{C391E82E-2614-4AB2-9B64-10169814B053}" class="item">
+<a name = "Entity_{C391E82E-2614-4AB2-9B64-10169814B053}"></a>
+<div class="caption1"><p>Dla_doroslych (child entity of Atrakcja)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">Dla doroslych</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Primary Unique Identifier</td>
+<td class="tabhead" width="20%">Attribute Name</td>
+<td class="tabhead" width="20%">Domain</td>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabhead" width="20%">Default Name</td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Wymagany_wiek</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">Integer</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Wymagany_wzrost</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">Integer</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Strsznosc</td>
+<td class="tabdata" width="20%">Strasznosc</td>
+<td class="tabdata" width="20%">VarChar(20)</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Choroby_serca</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">Boolean</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Description</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata">Atrakcje dla doroslych</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Entity_{47C55D1A-3390-435A-ACAF-0A463C2CC859}" class="item">
+<a name = "Entity_{47C55D1A-3390-435A-ACAF-0A463C2CC859}"></a>
+<div class="caption1"><p>Dla_dzieci (child entity of Atrakcja)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">Dla dzieci</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Primary Unique Identifier</td>
+<td class="tabhead" width="20%">Attribute Name</td>
+<td class="tabhead" width="20%">Domain</td>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabhead" width="20%">Default Name</td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Nadzor_rodzica</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">Boolean</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Dla_jakich</td>
+<td class="tabdata" width="20%">Dla_jakich</td>
+<td class="tabdata" width="20%">VarChar(20)</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Description</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata">Atrakcje dla dzieci</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Entity_{92BBC7E5-1ABD-4EA6-B1D8-9EF3C91CCAAA}" class="item">
+<a name = "Entity_{92BBC7E5-1ABD-4EA6-B1D8-9EF3C91CCAAA}"></a>
+<div class="caption1"><p>Dla_mlodziezy (child entity of Atrakcja)</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">Dla mlodziezy</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Primary Unique Identifier</td>
+<td class="tabhead" width="20%">Attribute Name</td>
+<td class="tabhead" width="20%">Domain</td>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabhead" width="20%">Default Name</td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Wymagany_wiek</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">Integer</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Wymagany_wzrost</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">Integer</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Strasznosc</td>
+<td class="tabdata" width="20%">Strasznosc</td>
+<td class="tabdata" width="20%">VarChar(20)</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Description</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata">Atrakcje dla mlodziezy</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Entity_{F929885B-D196-4FF6-9ACC-98E80F50E15C}" class="item">
+<a name = "Entity_{F929885B-D196-4FF6-9ACC-98E80F50E15C}"></a>
+<div class="caption1"><p>Kasa</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">Kasa</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Primary Unique Identifier</td>
+<td class="tabhead" width="20%">Attribute Name</td>
+<td class="tabhead" width="20%">Domain</td>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabhead" width="20%">Default Name</td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">YES</td>
+<td class="tabdata" width="20%">Id_kasy</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">Integer</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Numer_kasy</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">VarChar(2)</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Otwarta</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">Time</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Zamknieta</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">Time</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Relationship Name</td>
+<td class="tabhead" width="20%">Relationship Type</td>
+<td class="tabhead" width="40%">Relationship Between</td>
+<td class="tabhead" width="20%">Cardinality</td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">Ma</td>
+<td class="tabdata" width="20%">Non-Identifying</td>
+<td class="tabdata" width="40%">Park_rozrywki - Kasa</td>
+<td class="tabdata" width="20%">1..1 - 0..m</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Unique Identifiers</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Primary Unique Identifier</td>
+<td class="tabhead" width="20%">Unique Identifier Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">YES</td>
+<td class="tabdata" width="20%">Unique_Identifier17</td>
+<td class="tabdata" width="60%">Id_kasy</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Description</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata">Kasa parku rozrywki</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Entity_{40EABE4D-D9AC-499D-BB2B-E6541E2A4BF4}" class="item">
+<a name = "Entity_{40EABE4D-D9AC-499D-BB2B-E6541E2A4BF4}"></a>
+<div class="caption1"><p>Klient</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">Klient</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Primary Unique Identifier</td>
+<td class="tabhead" width="20%">Attribute Name</td>
+<td class="tabhead" width="20%">Domain</td>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabhead" width="20%">Default Name</td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">YES</td>
+<td class="tabdata" width="20%">Id_klienta</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">Integer</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Imie_klienta</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">VarChar(20)</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Nazwisko_klienta</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">VarChar(30)</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Plec_klienta</td>
+<td class="tabdata" width="20%">Plec</td>
+<td class="tabdata" width="20%">Character(1)</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Data_urodzenia_klienta</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">Date</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Wzrost</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">Integer</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Adres_mailowy_klienta</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">VarChar(60)</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Relationship Name</td>
+<td class="tabhead" width="20%">Relationship Type</td>
+<td class="tabhead" width="40%">Relationship Between</td>
+<td class="tabhead" width="20%">Cardinality</td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">Zabawia</td>
+<td class="tabdata" width="20%">Non-Identifying</td>
+<td class="tabdata" width="40%">Park_rozrywki - Klient</td>
+<td class="tabdata" width="20%">1..1 - 0..m</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Unique Identifiers</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Primary Unique Identifier</td>
+<td class="tabhead" width="20%">Unique Identifier Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">YES</td>
+<td class="tabdata" width="20%">Unique_Identifier4</td>
+<td class="tabdata" width="60%">Id_klienta</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Description</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata">Opis klienta parku rozrywki</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Entity_{7DDFBD72-0853-4C09-B455-47001215E6AC}" class="item">
+<a name = "Entity_{7DDFBD72-0853-4C09-B455-47001215E6AC}"></a>
+<div class="caption1"><p>Park_rozrywki</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">Park rozrywki</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Primary Unique Identifier</td>
+<td class="tabhead" width="20%">Attribute Name</td>
+<td class="tabhead" width="20%">Domain</td>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabhead" width="20%">Default Name</td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">YES</td>
+<td class="tabdata" width="20%">Id_parku_rozrywki</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">Integer</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Nazwa_parku</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">VarChar(30)</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Adres parku</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">VarChar(400)</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Powierzchnia</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">Integer</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Ilosc_atrakcji</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">Integer</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Numer_telefonu_parku</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">VarChar(9)</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Adres_mailowy_parku</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">VarChar(60)</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Wlasciciel</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">VarChar(60)</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Relationship Name</td>
+<td class="tabhead" width="20%">Relationship Type</td>
+<td class="tabhead" width="40%">Relationship Between</td>
+<td class="tabhead" width="20%">Cardinality</td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">Zatrudnia</td>
+<td class="tabdata" width="20%">Non-Identifying</td>
+<td class="tabdata" width="40%">Park_rozrywki - Pracownik</td>
+<td class="tabdata" width="20%">1..1 - 0..m</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Unique Identifiers</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Primary Unique Identifier</td>
+<td class="tabhead" width="20%">Unique Identifier Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">YES</td>
+<td class="tabdata" width="20%">Unique_Identifier1</td>
+<td class="tabdata" width="60%">Id_parku_rozrywki</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Description</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata">Opis parku rozrywki</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Entity_{3A1DEB76-E2DF-40C3-8FF7-C0720B921664}" class="item">
+<a name = "Entity_{3A1DEB76-E2DF-40C3-8FF7-C0720B921664}"></a>
+<div class="caption1"><p>Pracownik</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">Pracownik</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Primary Unique Identifier</td>
+<td class="tabhead" width="20%">Attribute Name</td>
+<td class="tabhead" width="20%">Domain</td>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabhead" width="20%">Default Name</td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">YES</td>
+<td class="tabdata" width="20%">Id_pracownika</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">Integer</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Imie_pracownika</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">VarChar(20)</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Nazwisko_pracownika</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">VarChar(30)</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Plec_pracownika</td>
+<td class="tabdata" width="20%">Plec</td>
+<td class="tabdata" width="20%">Character(1)</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Data_urodzenia_pracownika</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">Date</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">PESEL</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">Character(11)</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Stanowisko</td>
+<td class="tabdata" width="20%">Stanowisko</td>
+<td class="tabdata" width="20%">VarChar(20)</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Data_zatrudnienia</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">Date</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Numer_dokument</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">Character(9)</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Numer_konta</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">Character(26)</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Adres_pracownika</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">VarChar(400)</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Numer_telefonu_pracownika</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">VarChar(9)</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Adres_mailowy_pracownika</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">VarChar(60)</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Relationship Name</td>
+<td class="tabhead" width="20%">Relationship Type</td>
+<td class="tabhead" width="40%">Relationship Between</td>
+<td class="tabhead" width="20%">Cardinality</td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">Zatrudnia</td>
+<td class="tabdata" width="20%">Non-Identifying</td>
+<td class="tabdata" width="40%">Park_rozrywki - Pracownik</td>
+<td class="tabdata" width="20%">1..1 - 0..m</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Unique Identifiers</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Primary Unique Identifier</td>
+<td class="tabhead" width="20%">Unique Identifier Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">YES</td>
+<td class="tabdata" width="20%">Unique_Identifier2</td>
+<td class="tabdata" width="60%">Id_pracownika</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Description</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata">Opis pracownika zatrudnionego w parku rozrywki</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Entity_{906ED2E6-4EC9-4951-B120-2799A79DFACE}" class="item">
+<a name = "Entity_{906ED2E6-4EC9-4951-B120-2799A79DFACE}"></a>
+<div class="caption1"><p>Przekaska</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">Przekaska</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Primary Unique Identifier</td>
+<td class="tabhead" width="20%">Attribute Name</td>
+<td class="tabhead" width="20%">Domain</td>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabhead" width="20%">Default Name</td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">YES</td>
+<td class="tabdata" width="20%">Id_przekaski</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">Integer</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Nazwa_przekaski</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">VarChar(30)</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Cena_przekaski</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">Money</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Sklad</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">VarChar(400)</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Relationship Name</td>
+<td class="tabhead" width="20%">Relationship Type</td>
+<td class="tabhead" width="40%">Relationship Between</td>
+<td class="tabhead" width="20%">Cardinality</td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">Umozliwia</td>
+<td class="tabdata" width="20%">Non-Identifying</td>
+<td class="tabdata" width="40%">Park_rozrywki - Przekaska</td>
+<td class="tabdata" width="20%">1..1 - 0..m</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Unique Identifiers</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Primary Unique Identifier</td>
+<td class="tabhead" width="20%">Unique Identifier Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">YES</td>
+<td class="tabdata" width="20%">Unique_Identifier12</td>
+<td class="tabdata" width="60%">Id_przekaski</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Description</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata">Przekaski jakie zapewnia park rozrywki</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Entity_{781840F0-83A9-4AAE-AA45-4D43EC23DF3D}" class="item">
+<a name = "Entity_{781840F0-83A9-4AAE-AA45-4D43EC23DF3D}"></a>
+<div class="caption1"><p>Wagonik</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">Wagonik</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Primary Unique Identifier</td>
+<td class="tabhead" width="20%">Attribute Name</td>
+<td class="tabhead" width="20%">Domain</td>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabhead" width="20%">Default Name</td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">YES</td>
+<td class="tabdata" width="20%">Id_wagonika</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">Integer</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Marka</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">VarChar(30)</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Model</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">VarChar(30)</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Rodzaj_wagonika</td>
+<td class="tabdata" width="20%">Rodzaj_wagonika</td>
+<td class="tabdata" width="20%">VarChar(20)</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Relationship Name</td>
+<td class="tabhead" width="20%">Relationship Type</td>
+<td class="tabhead" width="40%">Relationship Between</td>
+<td class="tabhead" width="20%">Cardinality</td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">Posiada</td>
+<td class="tabdata" width="20%">Non-Identifying</td>
+<td class="tabdata" width="40%">Atrakcja - Wagonik</td>
+<td class="tabdata" width="20%">1..1 - 0..m</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Unique Identifiers</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Primary Unique Identifier</td>
+<td class="tabhead" width="20%">Unique Identifier Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">YES</td>
+<td class="tabdata" width="20%">Unique_Identifier11</td>
+<td class="tabdata" width="60%">Id_wagonika</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Description</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata">Opis wagonikow do atrakcji</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Entity_{0BCC48F5-2916-4925-88B8-FFEE1A288E43}" class="item">
+<a name = "Entity_{0BCC48F5-2916-4925-88B8-FFEE1A288E43}"></a>
+<div class="caption1"><p>Wynagrodzenie</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Caption</td>
+<td class="tabdata" width="80%">Wynagrodzenie</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Attributes</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Primary Unique Identifier</td>
+<td class="tabhead" width="20%">Attribute Name</td>
+<td class="tabhead" width="20%">Domain</td>
+<td class="tabhead" width="20%">Data Type</td>
+<td class="tabhead" width="20%">Default Name</td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">YES</td>
+<td class="tabdata" width="20%">Id_wynagrodzenia</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">Integer</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Data_wyplacania</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">Date</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Wysokosc</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">Money</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">NO</td>
+<td class="tabdata" width="20%">Dodatki</td>
+<td class="tabdata" width="20%"></td>
+<td class="tabdata" width="20%">Money</td>
+<td class="tabdata" width="20%"></td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Relationships</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Relationship Name</td>
+<td class="tabhead" width="20%">Relationship Type</td>
+<td class="tabhead" width="40%">Relationship Between</td>
+<td class="tabhead" width="20%">Cardinality</td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">Otrzymuje</td>
+<td class="tabdata" width="20%">Non-Identifying</td>
+<td class="tabdata" width="40%">Pracownik - Wynagrodzenie</td>
+<td class="tabdata" width="20%">1..1 - 0..m</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Unique Identifiers</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="20%">Primary Unique Identifier</td>
+<td class="tabhead" width="20%">Unique Identifier Name</td>
+<td class="tabhead" width="60%">Attributes</td>
+</tr>
+<tr>
+<td class="tabdata" width="20%">YES</td>
+<td class="tabdata" width="20%">Unique_Identifier3</td>
+<td class="tabdata" width="60%">Id_wynagrodzenia</td>
+</tr>
+</table>
+<br>
+<div class="caption2"><p>Description</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata">Wynagrodzenie wyplacane pracownikowi</td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+</div><div id="footer"><div class="pageFooter">Copyright &copy; Sitename 2005</div><div class="footerEnd"><p></p></div></div></div></div></body></html>

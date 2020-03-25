@@ -1,0 +1,581 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="keywords" content="TDM_Report">
+        <link rel="stylesheet" type="text/css" media="screen" href="anim.css" title="report">
+        <link rel="stylesheet" type="text/css" media="print" href="anim_NoFrames_print.css" title="report">
+            <script src="tdmShowDetails.js" type="text/javascript"></script>
+        <title>Toad Data Modeler - HTML Report</title>
+    </head>
+
+<body onLoad="getUrlItem()"><div class="mainContainer"><div id="headerContainer"><div id="header"><div class="title1"></div><div class="title2">Check Constraints</div><div class="reportStats">piątek, 13 grudnia 2019 05:49:46</div><div class="titleimage"><a href="https://www.quest.com/" target="_blank"><img src="Img/logo.png" alt="Made with Toad Data Modeler" border="0" /></a></div><div class="headerEnd"><p>&nbsp;</p></div></div><div id="navTop"><ul><li><a href="MInfo.html">Model Info</a></li><li><a href="MImage.html">ER Diagram</a></li><li><a href="Tables.html">Entities</a></li><li><a href="Columns.html">Attributes</a></li><li><a href="Indexes.html">Indexes</a></li><li><a href="Keys.html">Keys</a></li><li><a href="Relations.html">Relationships</a></li><li><a href="Domains.html">Domains</a></li><li><a href="CheckRules.html">Check Constraint Rules</a></li><li class="selLi"><a href="CheckConstraints.html" class="selAnchor">Check Constraints</a></li><li><a href="Triggers.html">Triggers</a></li><li><a href="Sequences.html">Sequences</a></li></ul><div id="navTopEnd"><p>&nbsp;</p></div></div></div><div id="navCombo"><form name="allItems" action=""><select name="listOfItems" onChange="showSelected()"><option value="Check_TABLECOL">Entities and Attributes</option><option>------------</option><option value="Check_{CBE79960-E414-410B-B8F2-CCEB918F7224}">Atrakcje.Rodzaj_atrakcji.Rodzaj_atrakcji</option><option>------------</option><option value="Check_{5E168569-6D7B-4F79-954C-88796300ED2C}">Bilety.Rodzaj_biletu.Rodzaj_biletu</option><option>------------</option><option value="Check_{2EB34E0B-618A-4492-9D98-0738723645D4}">Dla_doroslych.Choroby_serca.Choroby_serca</option><option value="Check_{AE544413-929D-46CD-9EE0-083EAE73E747}">Dla_doroslych.Strasznosc.Strasznosc_dorosli</option><option>------------</option><option value="Check_{2D3F3C79-1335-4DF8-A912-A4F848EC5BC7}">Dla_dzieci.Dla_jakich.Dla_jakich</option><option value="Check_{26383984-F5C3-45FC-A887-B32090EF060D}">Dla_dzieci.Nadzor_rodzica.Nadzor_rodzica</option><option>------------</option><option value="Check_{5C42A3B7-9AFA-46DD-87F3-49F150CD4481}">Dla_mlodziezy.Strasznosc.Strasznosc_mlodzez</option><option>------------</option><option value="Check_{894F4C26-4AB3-46BE-905C-638B862FABBC}">Klienci.Plec_klienta.Plec_klienta</option><option>------------</option><option value="Check_{CBADCBF3-E10D-4044-A478-D6C35E19E31F}">Pracownicy.Plec_pracownika.Plec_pracownika</option><option>------------</option><option value="Check_{AB55B3DB-117E-4418-BA61-14DF2DD1AA93}">Stanowiska.Miejsce_pracy.Stanowisko</option><option>------------</option><option value="Check_{6BD84BF9-CBBB-4974-A9A3-43042C575AF8}">Wagoniki.Rodzaj_wagonika.Rodzaj_wagonika</option><option>------------</option><option value="CheckD_DOMAIN">Domains</option><option value="CheckD_{AE59B2E5-01D7-460A-A720-2D50C19AC02A}">Choroby_serca.Choroby_serca</option><option value="CheckD_{3D729210-5306-4EEA-90CC-C66F6C70E1CA}">Dla_jakich.Dla_jakich</option><option value="CheckD_{4BDECA36-5503-4934-93AA-DC3380BC3C41}">Nadzor_rodzica.Nadzor_rodzica</option><option value="CheckD_{60A2216B-DCAD-4D4C-A808-988DB4750916}">Plec.Plec</option><option value="CheckD_{1DDE0827-59EE-46B2-87D4-ED01151F62EF}">Rodzaj_atrakcji.Rodzaj_atrakcji</option><option value="CheckD_{6CAE56CD-F0A0-49BB-BCF6-69B3CE84D685}">Rodzaj_biletu.Rodzaj_biletu</option><option value="CheckD_{71410EFB-002F-452E-BAE7-B1CDD29DEFFB}">Rodzaj_wagonika.Rodzaj_wagonika</option><option value="CheckD_{59C9CCE3-4A4D-4C03-8C1D-93F54249F9BB}">Stanowisko.Stanowisko</option><option value="CheckD_{45755FBA-64E3-4691-ADAE-CFFE92AC921D}">Strasznosc.Strasznosc</option></select></form><div id="navComboEnd"><p></p></div></div><div id="navLeft"><div id="bookmark"><ul><li class="liBookmarkHeader"><span class="bookmarkHeader">Entities and Attributes</span></li><li class="spacerGap"></li><li><a onClick="return showDetail('Check_{CBE79960-E414-410B-B8F2-CCEB918F7224}', this)">Atrakcje.Rodzaj_atrakcji.Rodzaj_atrakcji</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Check_{5E168569-6D7B-4F79-954C-88796300ED2C}', this)">Bilety.Rodzaj_biletu.Rodzaj_biletu</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Check_{2EB34E0B-618A-4492-9D98-0738723645D4}', this)">Dla_doroslych.Choroby_serca.Choroby_serca</a></li><li><a onClick="return showDetail('Check_{AE544413-929D-46CD-9EE0-083EAE73E747}', this)">Dla_doroslych.Strasznosc.Strasznosc_dorosli</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Check_{2D3F3C79-1335-4DF8-A912-A4F848EC5BC7}', this)">Dla_dzieci.Dla_jakich.Dla_jakich</a></li><li><a onClick="return showDetail('Check_{26383984-F5C3-45FC-A887-B32090EF060D}', this)">Dla_dzieci.Nadzor_rodzica.Nadzor_rodzica</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Check_{5C42A3B7-9AFA-46DD-87F3-49F150CD4481}', this)">Dla_mlodziezy.Strasznosc.Strasznosc_mlodzez</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Check_{894F4C26-4AB3-46BE-905C-638B862FABBC}', this)">Klienci.Plec_klienta.Plec_klienta</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Check_{CBADCBF3-E10D-4044-A478-D6C35E19E31F}', this)">Pracownicy.Plec_pracownika.Plec_pracownika</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Check_{AB55B3DB-117E-4418-BA61-14DF2DD1AA93}', this)">Stanowiska.Miejsce_pracy.Stanowisko</a></li><li class="spacerGap"></li><li><a onClick="return showDetail('Check_{6BD84BF9-CBBB-4974-A9A3-43042C575AF8}', this)">Wagoniki.Rodzaj_wagonika.Rodzaj_wagonika</a></li><li class="spacerGap"></li><li class="liBookmarkHeader"><span class="bookmarkHeader">Domains</span></li><li><a onClick="return showDetail('CheckD_{AE59B2E5-01D7-460A-A720-2D50C19AC02A}', this)">Choroby_serca.Choroby_serca</a></li><li><a onClick="return showDetail('CheckD_{3D729210-5306-4EEA-90CC-C66F6C70E1CA}', this)">Dla_jakich.Dla_jakich</a></li><li><a onClick="return showDetail('CheckD_{4BDECA36-5503-4934-93AA-DC3380BC3C41}', this)">Nadzor_rodzica.Nadzor_rodzica</a></li><li><a onClick="return showDetail('CheckD_{60A2216B-DCAD-4D4C-A808-988DB4750916}', this)">Plec.Plec</a></li><li><a onClick="return showDetail('CheckD_{1DDE0827-59EE-46B2-87D4-ED01151F62EF}', this)">Rodzaj_atrakcji.Rodzaj_atrakcji</a></li><li><a onClick="return showDetail('CheckD_{6CAE56CD-F0A0-49BB-BCF6-69B3CE84D685}', this)">Rodzaj_biletu.Rodzaj_biletu</a></li><li><a onClick="return showDetail('CheckD_{71410EFB-002F-452E-BAE7-B1CDD29DEFFB}', this)">Rodzaj_wagonika.Rodzaj_wagonika</a></li><li><a onClick="return showDetail('CheckD_{59C9CCE3-4A4D-4C03-8C1D-93F54249F9BB}', this)">Stanowisko.Stanowisko</a></li><li><a onClick="return showDetail('CheckD_{45755FBA-64E3-4691-ADAE-CFFE92AC921D}', this)">Strasznosc.Strasznosc</a></li></ul><div id="bookmarkEnd"><p>&nbsp;</p></div></div></div><div class="separator" ></div><div class="container"><div id="content"><a name = "Check_TABLECOL"></a>
+<div id="Check_{CBE79960-E414-410B-B8F2-CCEB918F7224}" class="item">
+<a name = "Check_{CBE79960-E414-410B-B8F2-CCEB918F7224}"></a>
+<div class="caption1"><p>Atrakcje.Rodzaj_atrakcji.Rodzaj_atrakcji</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">Rodzaj atrakcji</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">Atrakcje</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Name</td>
+<td class="tabdata">Rodzaj_atrakcji</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Check Constraint Rule</td>
+<td class="tabdata">Rodzaj_atrakcji</td>
+</tr>
+</table>
+<br>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata"><pre><code>--Rodzaj_atrakcji IN ('dla_dzieci','dla_mlodziezy','dla_doroslych');</code></pre></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Check_{5E168569-6D7B-4F79-954C-88796300ED2C}" class="item">
+<a name = "Check_{5E168569-6D7B-4F79-954C-88796300ED2C}"></a>
+<div class="caption1"><p>Bilety.Rodzaj_biletu.Rodzaj_biletu</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">Rodzaj biletu</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">Bilety</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Name</td>
+<td class="tabdata">Rodzaj_biletu</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Check Constraint Rule</td>
+<td class="tabdata">Rodzaj_biletu</td>
+</tr>
+</table>
+<br>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata"><pre><code>--Rodzaj_biletu IN ('jednodniowy','trzydniowy');</code></pre></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Check_{2EB34E0B-618A-4492-9D98-0738723645D4}" class="item">
+<a name = "Check_{2EB34E0B-618A-4492-9D98-0738723645D4}"></a>
+<div class="caption1"><p>Dla_doroslych.Choroby_serca.Choroby_serca</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">Choroby serca</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">Dla_doroslych</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Name</td>
+<td class="tabdata">Choroby_serca</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Check Constraint Rule</td>
+<td class="tabdata">Choroby_serca</td>
+</tr>
+</table>
+<br>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata"><pre><code>--Choroby_serca IN ('tak','nie');</code></pre></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Check_{AE544413-929D-46CD-9EE0-083EAE73E747}" class="item">
+<a name = "Check_{AE544413-929D-46CD-9EE0-083EAE73E747}"></a>
+<div class="caption1"><p>Dla_doroslych.Strasznosc.Strasznosc_dorosli</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">Strasznosc dorosli</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">Dla_doroslych</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Name</td>
+<td class="tabdata">Strasznosc</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Check Constraint Rule</td>
+<td class="tabdata">Strasznosc</td>
+</tr>
+</table>
+<br>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata"><pre><code>--Strasznosc IN ('wcale','troche','straszna','bardzo_straszna');</code></pre></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Check_{2D3F3C79-1335-4DF8-A912-A4F848EC5BC7}" class="item">
+<a name = "Check_{2D3F3C79-1335-4DF8-A912-A4F848EC5BC7}"></a>
+<div class="caption1"><p>Dla_dzieci.Dla_jakich.Dla_jakich</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">Dla jakich</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">Dla_dzieci</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Name</td>
+<td class="tabdata">Dla_jakich</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Check Constraint Rule</td>
+<td class="tabdata">Dla_jakich</td>
+</tr>
+</table>
+<br>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata"><pre><code>--Dla_jakich IN ('niemowlak','dziecko','duze_dziecko');</code></pre></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Check_{26383984-F5C3-45FC-A887-B32090EF060D}" class="item">
+<a name = "Check_{26383984-F5C3-45FC-A887-B32090EF060D}"></a>
+<div class="caption1"><p>Dla_dzieci.Nadzor_rodzica.Nadzor_rodzica</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">Nadzor rodzica</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">Dla_dzieci</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Name</td>
+<td class="tabdata">Nadzor_rodzica</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Check Constraint Rule</td>
+<td class="tabdata">Nadzor_rodzica</td>
+</tr>
+</table>
+<br>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata"><pre><code>--Nadzor_rodzica IN ('tak','nie');</code></pre></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Check_{5C42A3B7-9AFA-46DD-87F3-49F150CD4481}" class="item">
+<a name = "Check_{5C42A3B7-9AFA-46DD-87F3-49F150CD4481}"></a>
+<div class="caption1"><p>Dla_mlodziezy.Strasznosc.Strasznosc_mlodzez</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">Strasznosc mlodzez</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">Dla_mlodziezy</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Name</td>
+<td class="tabdata">Strasznosc</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Check Constraint Rule</td>
+<td class="tabdata">Strasznosc</td>
+</tr>
+</table>
+<br>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata"><pre><code>--Strasznosc IN ('wcale','troche','straszna','bardzo_straszna');</code></pre></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Check_{894F4C26-4AB3-46BE-905C-638B862FABBC}" class="item">
+<a name = "Check_{894F4C26-4AB3-46BE-905C-638B862FABBC}"></a>
+<div class="caption1"><p>Klienci.Plec_klienta.Plec_klienta</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">Plec klienta</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">Klienci</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Name</td>
+<td class="tabdata">Plec_klienta</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Check Constraint Rule</td>
+<td class="tabdata">Plec</td>
+</tr>
+</table>
+<br>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata"><pre><code>--Plec IN ('K','M');</code></pre></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Check_{CBADCBF3-E10D-4044-A478-D6C35E19E31F}" class="item">
+<a name = "Check_{CBADCBF3-E10D-4044-A478-D6C35E19E31F}"></a>
+<div class="caption1"><p>Pracownicy.Plec_pracownika.Plec_pracownika</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">Plec pracownika</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">Pracownicy</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Name</td>
+<td class="tabdata">Plec_pracownika</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Check Constraint Rule</td>
+<td class="tabdata">Plec</td>
+</tr>
+</table>
+<br>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata"><pre><code>--Plec IN ('K','M');</code></pre></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Check_{AB55B3DB-117E-4418-BA61-14DF2DD1AA93}" class="item">
+<a name = "Check_{AB55B3DB-117E-4418-BA61-14DF2DD1AA93}"></a>
+<div class="caption1"><p>Stanowiska.Miejsce_pracy.Stanowisko</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">Stanowisko</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">Stanowiska</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Name</td>
+<td class="tabdata">Miejsce_pracy</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Check Constraint Rule</td>
+<td class="tabdata">Stanowisko</td>
+</tr>
+</table>
+<br>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata"><pre><code>--Miejsce_pracy IN ('kasa','atrakcja');</code></pre></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="Check_{6BD84BF9-CBBB-4974-A9A3-43042C575AF8}" class="item">
+<a name = "Check_{6BD84BF9-CBBB-4974-A9A3-43042C575AF8}"></a>
+<div class="caption1"><p>Wagoniki.Rodzaj_wagonika.Rodzaj_wagonika</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">Rodzaj wagonika</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Entity Name</td>
+<td class="tabdata">Wagoniki</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Attribute Name</td>
+<td class="tabdata">Rodzaj_wagonika</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Check Constraint Rule</td>
+<td class="tabdata">Rodzaj_wagonika</td>
+</tr>
+</table>
+<br>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata"><pre><code>--Rodzaj_wagonika IN ('szynowy','latajacy','plywajacy','gokart');</code></pre></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<a name = "CheckD_DOMAIN"></a>
+<div id="CheckD_{AE59B2E5-01D7-460A-A720-2D50C19AC02A}" class="item">
+<a name = "CheckD_{AE59B2E5-01D7-460A-A720-2D50C19AC02A}"></a>
+<div class="caption1"><p>Choroby_serca.Choroby_serca</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">Choroby serca</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Domain Name</td>
+<td class="tabdata">Choroby_serca</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Check Constraint Rule</td>
+<td class="tabdata">Choroby_serca</td>
+</tr>
+</table>
+<br>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata"><pre><code>--Choroby_serca IN ('tak','nie');</code></pre></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="CheckD_{3D729210-5306-4EEA-90CC-C66F6C70E1CA}" class="item">
+<a name = "CheckD_{3D729210-5306-4EEA-90CC-C66F6C70E1CA}"></a>
+<div class="caption1"><p>Dla_jakich.Dla_jakich</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">Dla jakich</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Domain Name</td>
+<td class="tabdata">Dla_jakich</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Check Constraint Rule</td>
+<td class="tabdata">Dla_jakich</td>
+</tr>
+</table>
+<br>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata"><pre><code>--Dla_jakich IN ('niemowlak','dziecko','duze_dziecko');</code></pre></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="CheckD_{4BDECA36-5503-4934-93AA-DC3380BC3C41}" class="item">
+<a name = "CheckD_{4BDECA36-5503-4934-93AA-DC3380BC3C41}"></a>
+<div class="caption1"><p>Nadzor_rodzica.Nadzor_rodzica</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">Nadzor rodzica</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Domain Name</td>
+<td class="tabdata">Nadzor_rodzica</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Check Constraint Rule</td>
+<td class="tabdata">Nadzor_rodzica</td>
+</tr>
+</table>
+<br>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata"><pre><code>--Nadzor_rodzica IN ('tak','nie');</code></pre></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="CheckD_{60A2216B-DCAD-4D4C-A808-988DB4750916}" class="item">
+<a name = "CheckD_{60A2216B-DCAD-4D4C-A808-988DB4750916}"></a>
+<div class="caption1"><p>Plec.Plec</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">Plec</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Domain Name</td>
+<td class="tabdata">Plec</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Check Constraint Rule</td>
+<td class="tabdata">Plec</td>
+</tr>
+</table>
+<br>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata"><pre><code>--Plec IN ('K','M');</code></pre></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="CheckD_{1DDE0827-59EE-46B2-87D4-ED01151F62EF}" class="item">
+<a name = "CheckD_{1DDE0827-59EE-46B2-87D4-ED01151F62EF}"></a>
+<div class="caption1"><p>Rodzaj_atrakcji.Rodzaj_atrakcji</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">Rodzaj atrakcji</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Domain Name</td>
+<td class="tabdata">Rodzaj_atrakcji</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Check Constraint Rule</td>
+<td class="tabdata">Rodzaj_atrakcji</td>
+</tr>
+</table>
+<br>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata"><pre><code>--Rodzaj_atrakcji IN ('dla_dzieci','dla_mlodziezy','dla_doroslych');</code></pre></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="CheckD_{6CAE56CD-F0A0-49BB-BCF6-69B3CE84D685}" class="item">
+<a name = "CheckD_{6CAE56CD-F0A0-49BB-BCF6-69B3CE84D685}"></a>
+<div class="caption1"><p>Rodzaj_biletu.Rodzaj_biletu</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">Rodzaj biletu</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Domain Name</td>
+<td class="tabdata">Rodzaj_biletu</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Check Constraint Rule</td>
+<td class="tabdata">Rodzaj_biletu</td>
+</tr>
+</table>
+<br>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata"><pre><code>--Rodzaj_biletu IN ('jednodniowy','trzydniowy');</code></pre></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="CheckD_{71410EFB-002F-452E-BAE7-B1CDD29DEFFB}" class="item">
+<a name = "CheckD_{71410EFB-002F-452E-BAE7-B1CDD29DEFFB}"></a>
+<div class="caption1"><p>Rodzaj_wagonika.Rodzaj_wagonika</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">Rodzaj wagonika</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Domain Name</td>
+<td class="tabdata">Rodzaj_wagonika</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Check Constraint Rule</td>
+<td class="tabdata">Rodzaj_wagonika</td>
+</tr>
+</table>
+<br>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata"><pre><code>--Rodzaj_wagonika IN ('szynowy','latajacy','plywajacy','gokart');</code></pre></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="CheckD_{59C9CCE3-4A4D-4C03-8C1D-93F54249F9BB}" class="item">
+<a name = "CheckD_{59C9CCE3-4A4D-4C03-8C1D-93F54249F9BB}"></a>
+<div class="caption1"><p>Stanowisko.Stanowisko</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">Stanowisko</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Domain Name</td>
+<td class="tabdata">Stanowisko</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Check Constraint Rule</td>
+<td class="tabdata">Stanowisko</td>
+</tr>
+</table>
+<br>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata"><pre><code>--Miejsce_pracy IN ('kasa','atrakcja');</code></pre></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+<div id="CheckD_{45755FBA-64E3-4691-ADAE-CFFE92AC921D}" class="item">
+<a name = "CheckD_{45755FBA-64E3-4691-ADAE-CFFE92AC921D}"></a>
+<div class="caption1"><p>Strasznosc.Strasznosc</p></div>
+<div class="caption2"><p>General Info</p></div>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabhead" width="23%">Caption</td>
+<td class="tabdata">Strasznosc</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Domain Name</td>
+<td class="tabdata">Strasznosc</td>
+</tr>
+<tr>
+<td class="tabhead" width="23%">Check Constraint Rule</td>
+<td class="tabdata">Strasznosc</td>
+</tr>
+</table>
+<br>
+<table class="tabformat" border="0" cellpadding="2" cellspacing="1" width="100%">
+<tr>
+<td class="tabdata"><pre><code>--Strasznosc IN ('wcale','troche','straszna','bardzo_straszna');</code></pre></td>
+</tr>
+</table>
+<br>
+<div class="itemEnd"><p>&nbsp;</p></div></div>
+</div><div id="footer"><div class="pageFooter">Copyright &copy; Sitename 2005</div><div class="footerEnd"><p></p></div></div></div></div></body></html>
